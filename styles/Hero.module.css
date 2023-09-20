@@ -1,0 +1,136 @@
+.container {
+  position: relative;
+}
+
+.container img {
+  width: 100vw;
+  height: auto;
+  position: absolute;
+}
+.cards {
+  position: relative;
+  display: flex;
+  gap: 5px;
+  padding: 450px 107px 0 107px;
+}
+.cards div {
+  background-color: #650340;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #eaeaea;
+  padding: 40px 46px;
+}
+.cards div h1 {
+  color: #fff;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 29.4px;
+}
+.cards div p {
+  color: #eaeaea;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
+  line-height: 22.3px;
+}
+.cards img {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.content h1 {
+  color: #000;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  line-height: normal;
+}
+.content h1 span {
+  color: #650340;
+}
+.content p {
+  color: #303030;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.content button {
+  border-radius: 20px;
+  background-color: #650340;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 28px;
+  margin: auto;
+}
+.content {
+  text-align: center;
+  padding: 70px 187px;
+}
+.box {
+  display: flex;
+  justify-content: center;
+}
+.box div {
+  width: 70px;
+  height: 4px;
+  background-color: #650340;
+  flex-shrink: 0;
+}
+@media (max-width: 1370px) {
+  .cards {
+    padding: 320px 50px 0 50px;
+  }
+  .cards div h1 {
+    font-size: 15px;
+  }
+  .cards div p {
+    font-size: 12px;
+  }
+  .cards div {
+    padding: 20px 16px;
+  }
+  .content {
+    padding: 70px 50px;
+  }
+  .content h1 {
+    color: #000;
+    font-size: 36px;
+  }
+  .content p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 750px) {
+  .cards {
+    padding: 150px 50px 0 50px;
+    flex-direction: column;
+  }
+  .content h1{
+    color: #000;
+    font-size: 22px;
+  }
+  .content p {
+    font-size: 14px;
+    line-height:22px;
+  }
+  .content button {
+    font-size: 16px;
+    padding: 12px 18px;
+    
+  }
+}

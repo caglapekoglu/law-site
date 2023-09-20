@@ -1,0 +1,124 @@
+.container {
+  background-color: #650340;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 74px;
+}
+.container div {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px solid #f6f7fc;
+  width: 260px;
+  height: 50px;
+  background-color: transparent;
+  padding: 11px 26px;
+}
+.container div input {
+  background-color: transparent;
+  border: none;
+  opacity: 0.5;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  width: 100%;
+}
+.container input:focus {
+  border: none; /* Örnek bir mavi kenarlık ekledik */
+  outline: none; /* Default mavi odak çerçevesini kaldırır */
+  box-shadow: none; /* Örnek bir gölge ekledik */
+  /* Diğer özel stil tanımları buraya eklenebilir */
+}
+.container ul {
+  display: flex;
+  color: #f6f7fc;
+  font-size: 20px;
+  font-weight: 300;
+  gap: 20px;
+}
+.insideContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.mobileContainer {
+  display: none;
+}
+.mobileContainer button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: x-large !important;
+}
+.menuIcon {
+  color: white !important;
+}
+.menuItems {
+  color: white;
+  width: 100%;
+  border-bottom-style: solid;
+  border-color: white;
+  padding: 16px;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .insideContainer {
+    display: none;
+  }
+  .mobileContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .menuFrame {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    border-top-style: solid;
+    border-width: 2px;
+    border-color: white;
+    position: absolute;
+    z-index: 10;
+    top: 90px;
+    background-color: #650340;
+    opacity: 0.9;
+  }
+}
+@media (max-width: 1370px) {
+  .container {
+    padding: 11px 30px;
+  }
+  .container ul {
+    font-size: 14px;
+  }
+  .container img {
+    width: 150px;
+  }
+  .container div {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid #f6f7fc;
+    width: 160px;
+    height: 40px;
+    background-color: transparent;
+    padding: 5px 12px;
+  }
+  .insideContainer div img {
+    width: 20px;
+  }
+}

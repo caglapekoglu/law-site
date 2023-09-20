@@ -1,0 +1,41 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 92px 123px 36px 123px;
+  background-color: #650340;
+  gap: 153px;
+}
+.footer div {
+  display: flex;
+  flex-direction: column;
+}
+.footer span {
+  color: #bebebe;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 23.94px; /* 171% */
+  letter-spacing: -0.1px;
+}
+.footer h1 {
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 0;
+}
+.footer p {
+  color: #f6f7fc;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+  margin: 0;
+}
+.footer a{
+    color: #F6F7FC;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 37.8px; /* 189% */
+    letter-spacing: 0.3px;
+}

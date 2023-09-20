@@ -1,0 +1,40 @@
+.container {
+  background-color: #650340;
+  padding: 130px 66px;
+}
+.container button {
+  margin-top: 60px;
+  border-radius: 20px;
+  border: 1px solid #f6f7fc;
+  background-color: #650340;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 28px;
+  margin: auto;
+}
+.container h1 {
+  color: #f6f7fc;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+}
+@media (max-width: 920px) {
+.container {
+  background-color: #650340;
+  padding: 130px 50px;
+}
+.container h1 {
+  font-size: 22px;
+}
+.container button {
+  font-size: 16px;
+  padding: 12px 18px;
+  
+}
+}

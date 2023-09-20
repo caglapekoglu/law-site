@@ -1,0 +1,61 @@
+import styles from "../styles/Blog.module.css"; 
+import Link from "next/link";
+import { useEffect, useState } from "react";
+const Blog = () => {
+  const [blogPosts, setBlogPosts] = useState([]);
+  useEffect(() => {
+    fetch("/api/notion")
+      .then((response) => response.json())
+      .then((data) => {
+        if (Array.isArray(data)) {
+          setBlogPosts(data);
+          console.log(data);
+        } else {
+          console.error("Data is not an array:", data);
+        }
+      })
+      .catch((error) => console.error(error));
+  }, []);
+ 
+  return (
+    <div className={styles.container}>
+      <div className={styles.box}>
+        <div></div>
+      </div>
+      <h1>
+        Güncel <span>Blog</span> Yazılarımız
+      </h1>
+      <p>
+        Hukuki konularda sizleri bilgilendirmek, haklarınızı korumanıza yardımcı
+        olmak amacıyla düzenli olarak güncel blog yazıları sunuyoruz. Hukuk
+        dünyasındaki son gelişmeleri, önemli yargı kararlarını ve hukuki
+        ipuçlarını ele alıyoruz.
+      </p>
+      <button>
+        Tamamını Gör
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </button>
+        <ul>
+          {blogPosts.map((post, index) => {
+            return (
+              <div key={index}>
+                <img src={post.properties.images.files[0].file.url} alt="" />
+                <div>
+                  <h3>{post.properties.Title.url}</h3>
+                  <p>
+                  {post.properties.Description.rich_text[0].text.content.length > 200
+                  ? post.properties.Description.rich_text[0].text.content.substring(0, 150) + "..."
+                  : post.properties.Description.rich_text[0].text.content}
+                  </p>
+                  <Link href={`/blog/${index}`}>Detaylı İncele 
+                  <ion-icon name="arrow-forward-outline"></ion-icon></Link>
+                </div>
+              </div>
+            );
+          })}
+        </ul>
+      </div>
+  );
+};
+
+export default Blog;

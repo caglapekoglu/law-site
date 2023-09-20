@@ -1,0 +1,97 @@
+.container {
+  text-align: center;
+  padding: 70px 35px;
+  background-color: #650340;
+}
+.container h1 {
+  color: #f6f7fc;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.container p {
+  color: #fffae9;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  padding: 0 160px;
+}
+.box {
+  display: flex;
+  justify-content: center;
+}
+.box div {
+  width: 70px;
+  height: 4px;
+  background-color: #650340;
+  flex-shrink: 0;
+}
+.cards{
+  display: flex;
+  overflow-x: scroll;
+  gap: 9px;
+  position: relative;
+  width: 100%;
+}
+.cards div{
+  width: 435px;
+  height: 535px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: left;
+}
+.cards div h1 {
+  width: 435px;
+  z-index: 1;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0 20px;
+}
+.cards div span{
+  width: 435px;
+  display: flex;
+  z-index: 1;
+  color: #CECECE;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 30px 20px;
+}
+.cards div img{
+  width: 435px;
+  height: 535px;
+  position: absolute;
+}
+
+@media (max-width: 750px) {
+  .container h1{
+    font-size: 22px;
+  }
+  .container p {
+    font-size: 14px;
+    line-height:22px;
+    padding: 0 15px;
+  }
+  .cards div{
+    width: 300px;
+    height: 400px;
+  }
+  .cards div img{
+    width: 300px;
+    height: 400px;
+  }
+  .cards div h1 { 
+    width: 300px;
+    font-size: 18px;
+  }
+  .cards div span{
+    width: 300px;
+    font-size: 14px;
+    padding: 20px 20px;
+  }
+}

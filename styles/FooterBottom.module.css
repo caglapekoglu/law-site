@@ -1,0 +1,28 @@
+.footerBottom{
+    padding: 21px 132px 50px 132px;
+}
+.footerBottom article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #454545;
+    padding: 20px 0;
+}
+.footerBottom article div{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+.footerBottom article span{
+    color: #650340;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29.4px; /* 210% */
+}
+ @media (max-width:814px) {
+
+.footerBottom article{
+    flex-direction:column ;
+}
+ }
