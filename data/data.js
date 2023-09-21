@@ -75,26 +75,37 @@ export const teams =[
     {
         name:"Av. Mehmet Akif İĞDECİ",
         role:"Kurucu Ortak",
-        image: person1
+        image: person1,
+        linkedin:"http://www.linkedin.com/in/mehmet-akif-igdeci",
+        mail:"mehmetakif@igdeciaytekin.com"
+
     },
     {
         name:"Av. Berkan AYTEKİN",
         role:"Kurucu Ortak",
-        image: person2
+        image: person2,
+        linkedin:"www.linkedin.com/in/berkan-aytekin",
+        mail:"berkan@igdeciaytekin.com"
     },
     {
         name:"Av. Mahiye Merve İĞDECİ",
         role:"Danışman",
-        image: person3
+        image: person3,
+        linkedin:"www.linkedin.com/in/mahiyeigdeci",
+        mail:"info@igdeciaytekin.com "
     },
     {
         name:"Gayenur KARATAŞ",
         role:"Danışman",
-        image: person4
+        image: person4,
+        linkedin:"www.linkedin.com/in/gayenur-karatass",
+        mail:"info@igdeciaytekin.com"
     },
     {
         name:"Yusuf İkbal ÇELİK",
         role:"Operasyon Uzmanı",
-        image: person5
+        image: person5,
+        linkedin:"www.linkedin.com/in/yusuf-ikbal-celik",
+        mail:"yusufikbalcelik@igdeciaytekin.com"
     }
 ]

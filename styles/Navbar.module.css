@@ -1,11 +1,11 @@
-.container {
+.navbar {
   background-color: #650340;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 22px 74px;
 }
-.container div {
+.navbar div {
   display: flex;
   gap: 5px;
   align-items: center;
@@ -16,7 +16,7 @@
   background-color: transparent;
   padding: 11px 26px;
 }
-.container div input {
+.navbar div input {
   background-color: transparent;
   border: none;
   opacity: 0.5;
@@ -25,13 +25,13 @@
   font-weight: 300;
   width: 100%;
 }
-.container input:focus {
+.navbar input:focus {
   border: none; /* Örnek bir mavi kenarlık ekledik */
   outline: none; /* Default mavi odak çerçevesini kaldırır */
   box-shadow: none; /* Örnek bir gölge ekledik */
   /* Diğer özel stil tanımları buraya eklenebilir */
 }
-.container ul {
+.navbar ul {
   display: flex;
   color: #f6f7fc;
   font-size: 20px;
@@ -78,7 +78,7 @@
     justify-content: space-between;
     position: relative;
   }
-  .container {
+  .navbar {
     display: flex;
     flex-direction: column;
   }
@@ -98,16 +98,16 @@
   }
 }
 @media (max-width: 1370px) {
-  .container {
+  .navbar {
     padding: 11px 30px;
   }
-  .container ul {
+  .navbar ul {
     font-size: 14px;
   }
-  .container img {
+  .navbar img {
     width: 150px;
   }
-  .container div {
+  .navbar div {
     display: flex;
     gap: 5px;
     align-items: center;

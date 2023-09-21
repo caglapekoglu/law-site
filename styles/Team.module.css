@@ -67,7 +67,11 @@
   height: 535px;
   position: absolute;
 }
-
+@media (max-width:1100px) {
+  .container p {
+    padding: 0 50px;
+  }
+}
 @media (max-width: 750px) {
   .container h1{
     font-size: 22px;

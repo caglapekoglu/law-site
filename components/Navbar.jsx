@@ -14,10 +14,10 @@ const Navbar = () => {
     });
   };
   return (
-    <div className={styles.container}>
+    <div className={styles.navbar}>
       <article className={styles.insideContainer}>
-        <Image src={Logo}></Image>
-        <ul className=" ">
+        <Link href="/"><Image src={Logo}></Image></Link>
+        <ul>
           {menuItems.map((item, index) => (
             <Link key={index} href={item.path}>
               {item.txt}
