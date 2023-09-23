@@ -9,7 +9,7 @@ import styles from "../styles/Hero.module.css";
 const Hero = () => {
   return (
     <div className={styles.container}>
-      <Image src={Bg}></Image>
+      <Image alt="İğdeci Aytekin" src={Bg}></Image>
       <div className={styles.cards}>
         <div>
           <Image src={Icon1}></Image>

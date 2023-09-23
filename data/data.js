@@ -9,6 +9,11 @@ import person2 from '../public/assets/person2.png'
 import person3 from '../public/assets/person3.png'
 import person4 from '../public/assets/person4.png'
 import person5 from '../public/assets/person5.png'
+import person1Color from '../public/assets/person1Color.png'
+import person2Color from '../public/assets/person2Color.png'
+import person3Color from '../public/assets/person3Color.png'
+import person4Color from '../public/assets/person4Color.png'
+import person5Color from '../public/assets/person5Color.png'
 
 
 export const allServices = [
@@ -76,6 +81,7 @@ export const teams =[
         name:"Av. Mehmet Akif İĞDECİ",
         role:"Kurucu Ortak",
         image: person1,
+        hoveredImage: person1Color,
         linkedin:"http://www.linkedin.com/in/mehmet-akif-igdeci",
         mail:"mehmetakif@igdeciaytekin.com"
 
@@ -84,6 +90,7 @@ export const teams =[
         name:"Av. Berkan AYTEKİN",
         role:"Kurucu Ortak",
         image: person2,
+        hoveredImage: person2Color,
         linkedin:"www.linkedin.com/in/berkan-aytekin",
         mail:"berkan@igdeciaytekin.com"
     },
@@ -91,6 +98,7 @@ export const teams =[
         name:"Av. Mahiye Merve İĞDECİ",
         role:"Danışman",
         image: person3,
+        hoveredImage: person3Color,
         linkedin:"www.linkedin.com/in/mahiyeigdeci",
         mail:"info@igdeciaytekin.com "
     },
@@ -98,6 +106,7 @@ export const teams =[
         name:"Gayenur KARATAŞ",
         role:"Danışman",
         image: person4,
+        hoveredImage: person4Color,
         linkedin:"www.linkedin.com/in/gayenur-karatass",
         mail:"info@igdeciaytekin.com"
     },
@@ -105,6 +114,7 @@ export const teams =[
         name:"Yusuf İkbal ÇELİK",
         role:"Operasyon Uzmanı",
         image: person5,
+        hoveredImage: person5Color,
         linkedin:"www.linkedin.com/in/yusuf-ikbal-celik",
         mail:"yusufikbalcelik@igdeciaytekin.com"
     }

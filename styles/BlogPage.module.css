@@ -1,0 +1,89 @@
+.box {
+  display: flex;
+}
+.box div {
+  width: 70px;
+  height: 4px;
+  background-color: #650340;
+  flex-shrink: 0;
+}
+.headerImg {
+  width: 100vw;
+  height: auto;
+  height: 500px;
+  object-fit: cover;
+}
+.blog h1 {
+  color: #000;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 66.02px; /* 206.313% */
+}
+.blog p {
+  color: #303030;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 125% */
+}
+.blog article {
+  padding: 74px 167px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 500px;
+  position: absolute;
+  align-items: center;
+}
+.blog ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  margin-top: 72px;
+  padding: 0;
+}
+.blog ul div {
+  width: 100%;
+  text-align: left;
+}
+.blog ul div div h3 {
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.blog ul div div p {
+  color: #303030;
+  font-size: 13px;
+  font-weight: 300;
+margin: 0;
+line-height: normal;
+
+}
+.blog ul div div a {
+  border-radius: 20px;
+  font-size: 13px;
+  font: 600;
+  padding: 15px 13px;
+  display: flex;
+  align-items: center;
+  width: 150px;
+  background-color: #650340;
+  color: white;
+  gap: 5px;
+  justify-content: center;
+}
+.blog ul div img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.blog ul div div {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

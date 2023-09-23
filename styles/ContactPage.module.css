@@ -1,0 +1,12 @@
+.contact {
+  padding: 55px 74px;
+}
+.box {
+  display: flex;
+}
+.box div {
+  width: 70px;
+  height: 4px;
+  background-color: #650340;
+  flex-shrink: 0;
+}

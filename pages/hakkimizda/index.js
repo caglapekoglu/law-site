@@ -8,7 +8,7 @@ const AboutUs = () => {
   return (
     <Layout>
       <div className={styles.aboutUs}>
-      <Image className={styles.headerImg} src={HeaderImage} />
+      <Image alt="İğdeci Aytekin" className={styles.headerImg} src={HeaderImage} />
       <article>
         <div className={styles.box}>
           <div></div>

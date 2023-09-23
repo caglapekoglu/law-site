@@ -43,6 +43,10 @@
   justify-content: flex-end;
   text-align: left;
 }
+.cards img{
+  width: 435px;
+  height: 535px;
+}
 .cards div h1 {
   width: 435px;
   z-index: 1;
@@ -98,4 +102,19 @@
     font-size: 14px;
     padding: 20px 20px;
   }
+}
+.socialMedia{
+  width:24px; 
+  display: flex;
+  flex-direction: row !important;
+  padding: 33px 28px;
+  gap: 10px;
+  height:24px;
+  position: relative !important;
+  z-index: 1; 
+  color: white;
+}
+.socialMedia ion-icon{
+  width: 24px;
+height: 24px;
 }

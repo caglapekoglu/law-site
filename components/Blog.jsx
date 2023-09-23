@@ -36,7 +36,7 @@ const Blog = () => {
         <ion-icon name="arrow-forward-outline"></ion-icon>
       </button>
         <ul>
-          {blogPosts.map((post, index) => {
+          {blogPosts.slice(0, 2).map((post, index) => {
             return (
               <div key={index}>
                 <img src={post.properties.images.files[0].file.url} alt="" />
