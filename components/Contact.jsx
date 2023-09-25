@@ -19,10 +19,10 @@ const Contact = () => {
         <Image src={ContactImg}></Image>
         <div>
           <p>
-            <ion-icon name="mail-outline"></ion-icon>info@igdeciaytekin.com
+            <ion-icon name="mail-outline"></ion-icon><span>info@igdeciaytekin.com</span>
           </p>
           <p>
-            <ion-icon name="call-outline"></ion-icon>+90 216 651 4252
+            <ion-icon name="call-outline"></ion-icon><span>+90 216 651 4252</span>
           </p>
           <p>
             <ion-icon name="location-outline"></ion-icon>

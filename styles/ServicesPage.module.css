@@ -1,0 +1,47 @@
+.box {
+  display: flex;
+}
+.box div {
+  width: 70px;
+  height: 4px;
+  background-color: #650340;
+  flex-shrink: 0;
+}
+.headerImg {
+  width: 100vw;
+  height: 500px;
+  object-fit: cover;
+}
+.services h1 {
+  color: #000;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 66.02px; /* 206.313% */
+}
+.services p {
+  color: #303030;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 125% */
+}
+.services article {
+  padding: 74px 167px;
+}
+.title {
+  color: #650340;
+  font-weight: 600;
+}
+.serviceImg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 70px 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+}
