@@ -26,15 +26,24 @@ const ContactPage = () => {
               <h3>İletişim Bilgileri</h3>
               <p>
                 <ion-icon name="call-sharp"></ion-icon>
-                <Link href="tel:+902166514252" target="_blank">+90 216 651 4252</Link>
+                <Link href="tel:+902166514252" target="_blank">
+                  +90 216 651 4252
+                </Link>
               </p>
               <p>
                 <ion-icon name="logo-whatsapp"></ion-icon>
-                <Link href="https://api.whatsapp.com/send?phone=+902166514252" target="_blank">+90 216 651 4252</Link>
+                <Link
+                  href="https://api.whatsapp.com/send?phone=+902166514252"
+                  target="_blank"
+                >
+                  +90 216 651 4252
+                </Link>
               </p>
               <p>
                 <ion-icon name="mail-sharp"></ion-icon>
-                <Link href="mailto:info@igdeciaytekin.com" target="_blank">info@igdeciaytekin.com</Link>
+                <Link href="mailto:info@igdeciaytekin.com" target="_blank">
+                  info@igdeciaytekin.com
+                </Link>
               </p>
               <p>
                 <ion-icon name="location-sharp"></ion-icon>
@@ -43,7 +52,44 @@ const ContactPage = () => {
                 No :102/8 <br />
                 Kadıköy/İstanbul
               </p>
+              <div className={styles.ellipses}>
+                <div className={styles.ellipse1}></div>
+                <div className={styles.ellipse2}></div>
+              </div>
             </div>
+            <form action="https://formspree.io/f/xzbyjnnk" method="POST">
+              <div>
+                <label for="">Ad</label>
+                <input type="text" id="first_name" name="first_name"  placeholder="Adınız" required/>
+              </div>
+              <div>
+                <label for="">Soyad</label>
+                <input type="text" id="last_name" name="last_name" placeholder="Soyadınız" required />
+              </div>
+              <div>
+                <label for="">E-Posta</label>
+                <input type="email" name="email" placeholder="E-posta Adresiniz" required/>
+              </div>
+              <div>
+                <label for="">Telefon Numarası</label>
+                <input placeholder="+90 012 3456 789" />
+              </div>
+              <div style={{ gridColumn: " span 2" }} required>
+                <label for="">Mesaj</label>
+                <textarea
+                  name="message"
+                  rows="4"
+                  placeholder="Mesajınızı buraya yazabilirsiniz"
+                />
+              </div>
+              <div className={styles.kvkk}>
+                <input type="checkbox" />
+                <Link href="/">KVKK Metnini okudum ve onaylıyorum.</Link>
+              </div>
+              <div className={styles.button}>
+                <button type="submit">Gönder</button>
+              </div>
+            </form>
           </div>
         </article>
       </div>

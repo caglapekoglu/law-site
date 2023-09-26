@@ -6,6 +6,7 @@
   height: 4px;
   background-color: #650340;
   flex-shrink: 0;
+  margin-bottom: 16px;
 }
 .headerImg {
   width: 100vw;
