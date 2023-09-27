@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/Contact.module.css";
 import Image from "next/image";
-import ContactImg from "../public/assets/contact.png";
+import ContactImg from "../public/assets/Contact.png";
 const Contact = () => {
   return (
     <div className={styles.container}>
@@ -16,7 +16,7 @@ const Contact = () => {
         </p>
       </div>
       <div className={styles.contact}>
-        <Image src={ContactImg}></Image>
+        <Image alt="İletişim" src={ContactImg}></Image>
         <div>
           <p>
             <ion-icon name="mail-outline"></ion-icon><span>info@igdeciaytekin.com</span>
