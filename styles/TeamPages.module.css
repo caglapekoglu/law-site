@@ -4,10 +4,10 @@
 .box {
   display: flex;
 }
-.div{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .box div {
   width: 70px;
@@ -39,31 +39,32 @@
   width: 100%;
 }
 .cards div h1 {
-    width: 435px;
-    z-index: 1;
-    color: #FFF;
-    font-size: 24px;
-    font-weight: 600;
-    margin: 0;
-    padding: 0 20px;
-  }
-  .cards div span{
-    width: 435px;
-    display: flex;
-    z-index: 1;
-    color: #CECECE;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 400;
-    padding: 30px 20px;
-  }
-  .cards div img{
-    width: 435px;
-    height: 535px;
-    position: absolute;
-    z-index: 0;
-  }
-  
+  width: 335px;
+  z-index: 1;
+  color: #fff;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0 20px;
+}
+.cards div span {
+  width: 335px;
+  display: flex;
+  z-index: 1;
+  color: #cecece;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 30px 20px;
+}
+.cards div img {
+  width: 335px;
+  height: 435px;
+  position: absolute;
+  z-index: 0;
+}
+
 .row {
   display: flex;
   justify-content: center;
@@ -72,40 +73,101 @@
 }
 
 .item {
-  width: 435px;
-  height: 535px;
+  width: 335px;
+  height: 435px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   text-align: left;
-  
 }
-.item div{
-    z-index: 1;
-    display: flex;
+.item div {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.socialMedia {
+  width: 24px;
+  display: flex;
+  flex-direction: row !important;
+  padding: 33px 28px;
+  gap: 10px;
+  height: 24px;
+  position: relative !important;
+  z-index: 1;
+  color: white;
+}
+.socialMedia ion-icon {
+  width: 24px;
+  height: 24px;
+}
+.card {
+  width: 335px;
+  height: 435px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width:1100px) {
+  .card {
+    width: 235px;
+    height: 305px;
+  }
+  .cards div img {
+    width: 235px;
+    height: 305px;
+  }
+  .item {
+    width: 235px;
+    height: 305px;
+  }
+  .cards div h1 {
+    width: 235px;
+    font-size: 14px;
+  }
+  .cards div span {
+    width: 235px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 720px) {
+  .team h1 {
+    font-size: 32px;
+    line-height: 30px;
+    margin-top: 12px;
+  }
+  .team {
+    padding: 74px 50px;
+  }
+  .team p {
+    font-size: 18px;
+  }
+  .row {
     flex-direction: column;
-    justify-content: space-between;
+  }
+  .card {
+    width: 300px;
+    height: 400px;
+  }
+  .cards div img {
+    width: 300px;
+    height: 400px;
+  }
+  .cards div h1 {
+    width: 300px;
+    font-size: 22px;
+  }
+  .cards div span {
+    width: 300px;
+    font-size: 16px;
+  }
+
+.item {
+  width: 300px;
+  height: 400px;
 }
-.socialMedia{
-    width:24px; 
-    display: flex;
-    flex-direction: row !important;
-    padding: 33px 28px;
-    gap: 10px;
-    height:24px;
-    position: relative !important;
-    z-index: 1; 
-    color: white;
+.row{
+  margin-top: 0px;
 }
-.socialMedia ion-icon{
-    width: 24px;
-height: 24px;
-}
-.card{
-    width: 435px;
-    height: 535px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }

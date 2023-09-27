@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../../styles/TeamPages.module.css";
 import Layout from "../../layout/Layout";
 import { teams } from "../../data/data";
@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const TeamPages = () => {
+  const [hoveredTeam, setHoveredTeam] = useState(null);
   return (
     <Layout>
       <div className={styles.team}>
@@ -22,8 +23,15 @@ const TeamPages = () => {
         <div className={styles.cards}>
           <div className={styles.row}>
             {teams.slice(0, 2).map((item, index) => (
-              <div key={index} className={styles.item}>
-                <Image src={item.image} alt={item.name}/>
+              <div
+                key={item.id}
+                onMouseEnter={() => setHoveredTeam(item)}
+                onMouseLeave={() => setHoveredTeam(null)}
+                className={styles.item}
+              >
+                <Image
+                  src={hoveredTeam === item ? item.hoveredImage : item.image}
+                ></Image>
                 <div className={styles.card}>
                   <div className={styles.socialMedia}>
                     <Link href={item.linkedin}>
@@ -43,8 +51,15 @@ const TeamPages = () => {
           </div>
           <div className={styles.row}>
             {teams.slice(2).map((item, index) => (
-              <div key={index} className={styles.item}>
-                <Image src={item.image} alt={item.name}/>
+              <div
+                key={item.id}
+                onMouseEnter={() => setHoveredTeam(item)}
+                onMouseLeave={() => setHoveredTeam(null)}
+                className={styles.item}
+              >
+                <Image
+                  src={hoveredTeam === item ? item.hoveredImage : item.image}
+                ></Image>
                 <div className={styles.card}>
                   <div className={styles.socialMedia}>
                     <Link href={item.linkedin}>

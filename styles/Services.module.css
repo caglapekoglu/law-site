@@ -52,13 +52,20 @@
         grid-template-columns: 1fr 1fr;
     }
 }@media (max-width: 750px) {
+    .services div{
+        height: 300px;
+    }
+    .container img{
+        width: 50px;
+        height: auto;
+    }
     .container h1{
       color: #000;
       font-size: 22px;
     }
     .container p {
-      font-size: 14px;
-      line-height:22px;
+      font-size: 12px;
+      line-height:14px;
     }
     .container button {
       font-size: 16px;
