@@ -51,6 +51,10 @@
   line-height: 30px;
 }
 @media (max-width: 500px) {
-    .card {
-        height: 330px !important;}
-} 
+  .card {
+    height: 330px !important;
+  }
+  .content-hovered p {
+    font-size: 14px;
+  }
+}
