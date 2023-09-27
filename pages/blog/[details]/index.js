@@ -1,10 +1,15 @@
 import { useEffect, useState } from "react";
 import Layout from "../../../layout/Layout";
-import styles from "../../../styles/BlogDetail.module.css"
+import styles from "../../../styles/BlogDetail.module.css";
 import Image from "next/image";
+import { useRouter } from "next/router"; // Import the useRouter hook
+
 function BlogDetail() {
-  const id = Number(window.location.href.split("/").pop());
+  const router = useRouter(); // Initialize the router
+  const id = Number(router.query.details); // Use the router to get the query parameter
+
   const [blogPosts, setBlogPosts] = useState([]);
+
   useEffect(() => {
     fetch("/api/notion")
       .then((response) => response.json())
@@ -33,12 +38,10 @@ function BlogDetail() {
           <div className={styles.box}>
             <div></div>
           </div>
-            <h1>{blogPosts[id]?.properties.Title.url}</h1>
-      <p>{blogPosts[id]?.properties.Description.rich_text[0].plain_text}</p>
-
-  
-    </article>
-    </div>
+          <h1>{blogPosts[id]?.properties.Title.url}</h1>
+          <p>{blogPosts[id]?.properties.Description.rich_text[0].plain_text}</p>
+        </article>
+      </div>
     </Layout>
   );
 }
