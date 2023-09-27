@@ -30,6 +30,7 @@ const ServicesPages = () => {
         <article className={styles.cards}>
           {ServicePageItems.map((item, index) => (
             <ServiceCard
+            key={index}
               title={item.title}
               icon={item.icon}
               content={item.content}
