@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Layout from "../../../layout/Layout";
 import styles from "../../../styles/BlogDetail.module.css";
-import Image from "next/image";
 import { useRouter } from "next/router"; // Import the useRouter hook
 
 function BlogDetail() {
@@ -27,7 +26,7 @@ function BlogDetail() {
   return (
     <Layout>
       <div className={styles.blogDetail}>
-        <Image
+      <img
           className={styles.headerImg}
           width='100'
           alt={blogPosts[id]?.properties.images.files[0].name}

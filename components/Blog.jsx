@@ -40,7 +40,7 @@ const Blog = () => {
           {blogPosts.slice(0, 2).map((post, index) => {
             return (
               <div key={index}>
-                <Image src={post.properties.images.files[0].file.url} alt={post.properties.Title.url} />
+                <img src={post.properties.images.files[0].file.url} alt={post.properties.Title.url} />
                 <div>
                   <h3>{post.properties.Title.url}</h3>
                   <p>
@@ -48,7 +48,7 @@ const Blog = () => {
                   ? post.properties.Description.rich_text[0].text.content.substring(0, 150) + "..."
                   : post.properties.Description.rich_text[0].text.content}
                   </p>
-                  <Link href={`/blog/[${index}]`}>Detaylı İncele 
+                  <Link href={`/blog/${index}`}>Detaylı İncele 
                   <ion-icon name="arrow-forward-outline"></ion-icon></Link>
                 </div>
               </div>
