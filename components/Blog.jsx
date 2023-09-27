@@ -47,7 +47,7 @@ const Blog = () => {
                   ? post.properties.Description.rich_text[0].text.content.substring(0, 150) + "..."
                   : post.properties.Description.rich_text[0].text.content}
                   </p>
-                  <Link href={`/blog/${index}`}>Detaylı İncele 
+                  <Link href={`/blog/[${index}]`}>Detaylı İncele 
                   <ion-icon name="arrow-forward-outline"></ion-icon></Link>
                 </div>
               </div>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Layout from "../../../layout/Layout";
-import styles from '../../../styles/BlogDetail.module.css'
+import styles from "../../../styles/BlogDetail.module.css"
 import Image from "next/image";
 function BlogDetail() {
   const id = Number(window.location.href.split("/").pop());

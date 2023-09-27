@@ -29,7 +29,7 @@ const AboutUs = () => {
       <article className={styles.paragraph}>
         <p>
           Büromuzdaki uzman avukat ve danışman kadromuz, İğdeci Aytekin Hukuk &
-          Danışmanlık Bürosu'nun temel gücünü oluşturur. Hukukun farklı
+          Danışmanlık Bürosunun temel gücünü oluşturur. Hukukun farklı
           alanlarında branşlaşma esasına göre uzmanlaşmış olan ekibimiz,
           karmaşık hukuki meseleleri ele alırken her zaman güncel yasal
           düzenlemelere hakimdir. Müvekkillerimizin karşılaştığı zorlukları
