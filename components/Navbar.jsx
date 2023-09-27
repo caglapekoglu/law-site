@@ -16,7 +16,9 @@ const Navbar = () => {
   return (
     <div className={styles.navbar}>
       <article className={styles.insideContainer}>
-        <Link href="/"><Image src={Logo}></Image></Link>
+        <Link href="/">
+          <Image src={Logo}></Image>
+        </Link>
         <ul>
           {menuItems.map((item, index) => (
             <Link key={index} href={item.path}>
@@ -31,7 +33,9 @@ const Navbar = () => {
       </article>
 
       <article className={styles.mobileContainer}>
-        <Image src={Logo}></Image>
+        <Link href="/">
+          <Image src={Logo}></Image>
+        </Link>
         <button onClick={() => showMenu()}>
           <ion-icon color={"white"} name="menu-outline"></ion-icon>
         </button>
