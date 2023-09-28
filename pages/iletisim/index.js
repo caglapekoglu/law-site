@@ -223,13 +223,14 @@ const ContactPage = () => {
               <div style={{ gridColumn: " span 2" }} required>
                 <label for="">Mesaj</label>
                 <textarea
+                 required
                   name="message"
                   rows="4"
                   placeholder="Mesajınızı buraya yazabilirsiniz"
                 />
               </div>
               <div className={styles.kvkk}>
-                <input type="checkbox" />
+                <input required type="checkbox" />
                 <button className={styles.kvkkButton} onClick={() => togglePopup()}>
                   KVKK Metnini okudum ve onaylıyorum.
                 </button>
