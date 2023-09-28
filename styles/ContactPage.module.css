@@ -30,6 +30,8 @@
   display: flex;
   background-color: white;
   border-radius: 10px;
+  width: 100%;
+  overflow: hidden;
 }
 .info {
   background-color: #650340;
@@ -79,8 +81,8 @@
 .contact form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-width: 100%;
-gap: 43px;
+  width: 100%;
+  gap: 30px;
   padding: 60px 110px;
 }
 .contact form div input {
@@ -124,37 +126,149 @@ gap: 43px;
   font-weight: 600;
   line-height: 20px; /* 166.667% */
 }
-.button button{
+.button button {
   padding: 15px 90px;
   background-color: #650340;
-  color: #FFF;
-text-align: center;
-border: none;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-border-radius: 5px;
-display: grid;
-line-height: normal;
-cursor: pointer;
+  color: #fff;
+  text-align: center;
+  border: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  border-radius: 5px;
+  display: grid;
+  line-height: normal;
+  cursor: pointer;
 }
-.button{
+.button {
   display: flex;
   align-items: flex-end;
 }
-.kvkk{
- display: flex !important;
- flex-direction: row !important;
- color: #8D8D8D;
-font-family: Sora;
-font-size: 12px;
-align-items: center;
-font-style: normal;
-font-weight: 400;
-line-height: 20px; /* 166.667% */
-text-decoration-line: underline;
+.kvkk {
+  display: flex !important;
+  flex-direction: row !important;
+  color: #8d8d8d;
+  font-family: Sora;
+  font-size: 12px;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  text-decoration-line: underline;
 }
-.kvkk input{
+.kvkk input {
   display: grid !important;
   width: 20px !important;
+}
+.popup {
+  position: absolute;
+  overflow-y: scroll;
+  height: 700px;
+  border-radius: 20px;
+  background-color: #f6f7fc;
+  padding: 10px 18px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+.popup div h2 {
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.popup div h3 {
+  color: #1e1e1e;
+  font-size: 10px;
+  font-style: normal;
+  margin: 0;
+  font-weight: 600;
+  line-height: normal;
+}
+.popup div p {
+  color: #8d8d8d;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.kvkkButton {
+  background-color: transparent;
+  border: none;
+  color: #8d8d8d;
+  font-family: Sora;
+  font-size: 7px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 5.5px; /* 110% */
+  text-decoration-line: none;
+}
+@media (max-width: 1035px) {
+  .contact {
+    padding: 55px 34px;
+  }
+  .contact form {
+    padding: 60px 10px;
+  }
+  .info h3 {
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 70px;
+  }
+  .info p {
+    color: #fff;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+@media (max-width: 750px) {
+  .contact article h2 {
+    color: #650340;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .paragraph {
+    color: #717171;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .contact {
+    padding: 25px 12px;
+  }
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact form label {
+    opacity: 0;
+    display: none;
+  }
+  .contact form div input {
+    padding: 5px 0;
+  }
+  .info {
+    padding: 10px;
+  }
+  .button button {
+    padding: 15px 10px;
+    font-size: 12px;
+  }
+  .kvkk {
+    font-size: 10px;
+  }
 }
