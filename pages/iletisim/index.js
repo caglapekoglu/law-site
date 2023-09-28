@@ -52,7 +52,7 @@ const ContactPage = () => {
                 </p>
                 <h3>2. Veri Sorumlusu</h3>
                 <p>
-                  Veri sorumlusu olarak, İğdeci Aytekin, Türkiye'de faaliyet
+                  Veri sorumlusu olarak, İğdeci Aytekin, Türkiye`de faaliyet
                   göstermektedir ve kişisel verilerin işlenmesi süreçlerinin
                   sorumlusudur. İletişim bilgilerimiz aşağıdaki gibidir: Adres:
                   Bostancı Mahallesi, Emin Ali Paşa Caddesi, No:102 İç Kapı No:8
@@ -77,7 +77,7 @@ const ContactPage = () => {
                 </p>
                 <h3>5. Kişisel Verilerin İşlenme Hukuki Sebepleri </h3>
                 <p>
-                  Kişisel verileriniz, KVKK'nin 5. ve 6. maddelerine uygun
+                  Kişisel verileriniz, KVKK`nin 5. ve 6. maddelerine uygun
                   olarak işlenmektedir. Bu hukuki sebepler arasında rızanız,
                   sözleşme yürütme, yasal yükümlülüklerin yerine getirilmesi,
                   hukuki menfaatin korunması gibi sebepler yer almaktadır.
@@ -125,7 +125,7 @@ const ContactPage = () => {
                   ilgili herhangi bir sorunuz veya endişeniz varsa, lütfen
                   İğdeci Aytekin ile iletişime geçmekten çekinmeyin. Size
                   yardımcı olmaktan mutluluk duyarız. Bu aydınlatma metni,
-                  KVKK'ye uygun olarak düzenlenmiş olup gerektiğinde
+                  KVKK`ye uygun olarak düzenlenmiş olup gerektiğinde
                   güncellenebilir. Güncellemeler hakkında sizi
                   bilgilendireceğiz. Açık Rıza ve Onay Metni 6698 sayılı Kişisel
                   Verilerin Korunması Kanunu çerçevesinde kişisel/özel nitelikli
