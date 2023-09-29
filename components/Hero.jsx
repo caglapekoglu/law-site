@@ -5,7 +5,7 @@ import Icon1 from "../public/assets/icon1.svg";
 import Icon2 from "../public/assets/icon2.svg";
 import Icon3 from "../public/assets/icon3.svg";
 import styles from "../styles/Hero.module.css";
-
+import Link from "next/link";
 const Hero = () => {
   return (
     <div className={styles.container}>
@@ -53,10 +53,10 @@ const Hero = () => {
           meselelerin her birinin benzersiz gereksinimlerine odaklanıyor ve
           müvekkil odaklı yaklaşımımızı her zaman önceliğimiz olarak koruyoruz.
         </p>
-        <button>
+        <Link href='/hakkimizda'>
           Detaylı Bilgi
           <ion-icon name="arrow-forward-outline"></ion-icon>
-        </button>
+        </Link>
       </div>
     </div>
   );

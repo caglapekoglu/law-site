@@ -63,7 +63,7 @@
   font-weight: 600;
   line-height: 30px;
 }
-.content button {
+.content a {
   border-radius: 20px;
   background-color: #650340;
   color: #fff;
@@ -76,6 +76,7 @@
   justify-content: center;
   padding: 20px 28px;
   margin: auto;
+  width: 250px;
 }
 .content {
   text-align: center;
@@ -128,9 +129,9 @@
     font-size: 14px;
     line-height:22px;
   }
-  .content button {
+  .content a {
     font-size: 16px;
     padding: 12px 18px;
-    
+    width: 200px;
   }
 }
