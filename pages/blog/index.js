@@ -20,11 +20,17 @@ const BlogPage = () => {
       })
       .catch((error) => console.error(error));
   }, []);
-
+  const [logoSlideIn, setLogoSlideIn] = useState(false);
+  useEffect(() => {
+    // Sayfa yüklendiğinde logo'yu kaydır
+    setTimeout(() => {
+      setLogoSlideIn(true);
+    }, 300); // Örnek olarak 1000 milisaniye (1 saniye) sonra kaydırma işlemi başlayacak
+  }, []);
   return (
     <Layout>
       <div className={styles.blog}>
-        <div className={styles.logo}>
+        <div  className={`${styles.logo} ${logoSlideIn ? styles["slide-in"] : ""}`}>
           <Image alt="İğdeci Aytekin" src={Logo} />
         </div>
         <Image

@@ -13,6 +13,15 @@
   position: absolute;
   align-items: center;
 }
+.logo {
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Logo kaydırıldığında buradaki stil uygulanacak */
+.logo.slide-in {
+  transform: translateX(0);
+}
 .box div {
   width: 70px;
   height: 4px;

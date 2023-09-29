@@ -5,10 +5,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease-in-out;
   border: 3px solid #650340;
   cursor: pointer;
 }
+
 
 .card:hover {
   background-color: #650340;

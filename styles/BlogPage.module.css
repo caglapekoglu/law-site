@@ -58,9 +58,8 @@
   color: #303030;
   font-size: 13px;
   font-weight: 300;
-margin: 0;
-line-height: normal;
-
+  margin: 0;
+  line-height: normal;
 }
 .blog ul div div a {
   border-radius: 20px;
@@ -86,22 +85,31 @@ line-height: normal;
   flex-direction: column;
   justify-content: space-between;
 }
-@media (max-width:1000px) {
+@media (max-width: 1000px) {
   .blog h1 {
-      font-size: 32px;
-      line-height: 30px; 
-    }
-    .blog article {
-      padding: 74px 50px;
-    }
-    .blog article p {
-      font-size: 18px;
-    }
-    .blog ul{
-      grid-template-columns: 1fr;
-    }
-    .logo img{
-width: 400px;
-height: auto;
+    font-size: 32px;
+    line-height: 30px;
+  }
+  .blog article {
+    padding: 74px 50px;
+  }
+  .blog article p {
+    font-size: 18px;
+  }
+  .blog ul {
+    grid-template-columns: 1fr;
+  }
+  .logo img {
+    width: 400px;
+    height: auto;
+  }
 }
+.logo {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out; /* 0.3 saniye animasyon süresi */
+}
+
+/* Logo kaydırıldığında buradaki stil uygulanacak */
+.logo.slide-in {
+  transform: translateX(0);
 }
