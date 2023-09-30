@@ -34,10 +34,10 @@ const TeamPages = () => {
                 ></Image>
                 <div className={styles.card}>
                   <div className={styles.socialMedia}>
-                    <Link href={item.linkedin}>
+                    <Link target="_blank"  href={item.linkedin}>
                       <ion-icon name="logo-linkedin"></ion-icon>
                     </Link>
-                    <Link href={item.mail}>
+                    <Link target="_blank"  href={item.mail}>
                       <ion-icon name="mail-outline"></ion-icon>
                     </Link>
                   </div>
@@ -62,10 +62,10 @@ const TeamPages = () => {
                 ></Image>
                 <div className={styles.card}>
                   <div className={styles.socialMedia}>
-                    <Link href={item.linkedin}>
+                    <Link target="_blank" href={item.linkedin}>
                       <ion-icon name="logo-linkedin"></ion-icon>
                     </Link>
-                    <Link href={item.mail}>
+                    <Link target="_blank" href={item.mail}>
                       <ion-icon name="mail-outline"></ion-icon>
                     </Link>
                   </div>

@@ -32,10 +32,10 @@ const Blog = () => {
         dünyasındaki son gelişmeleri, önemli yargı kararlarını ve hukuki
         ipuçlarını ele alıyoruz.
       </p>
-      <button>
-        Tamamını Gör
-        <ion-icon name="arrow-forward-outline"></ion-icon>
-      </button>
+      <Link className={styles.button} href='/blog'>
+          Tamamını gör
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </Link>
         <ul>
           {blogPosts.slice(0, 2).map((post, index) => {
             return (

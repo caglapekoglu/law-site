@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/Services.module.css";
 import { allServices } from "../data/data";
 import Image from "next/image";
-
+import Link from "next/link";
 const Services = () => {
   return (
     <div className={styles.container}>
@@ -24,6 +24,10 @@ const Services = () => {
           </div>
         ))}
       </div>
+      <Link href='/hizmetlerimiz'>
+          Detaylı Bilgi
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </Link>
     </div>
   );
 };

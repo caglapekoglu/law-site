@@ -3,7 +3,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 74px;
+  padding: 12px 74px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 .navbar div {
   display: flex;

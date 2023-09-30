@@ -46,6 +46,21 @@
     font-size: 20px;
     font-weight: 300;
 }
+.container a{
+    border-radius: 20px;
+    background-color: #650340;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 28px;
+    margin: 30px auto 0 auto;
+    width: 250px;
+}
 @media (max-width: 960px) {
     .services{
         display: grid;

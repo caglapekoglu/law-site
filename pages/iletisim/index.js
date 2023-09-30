@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Layout from "../../layout/Layout";
 import styles from "../../styles/ContactPage.module.css";
 import Link from "next/link";
+import { Helmet } from "react-helmet";
+
 const ContactPage = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
@@ -10,6 +12,10 @@ const ContactPage = () => {
   };
   return (
     <Layout>
+      <Helmet>
+        <title>İletişim</title>
+        <meta name="description" content="İletişim Bilgileri"></meta>
+      </Helmet>
       <div className={styles.contact}>
         <div className={styles.box}>
           <div></div>
@@ -112,18 +118,20 @@ const ContactPage = () => {
                   olarak işlenmesi sebebiyle zarara uğraması hâlinde zararın
                   giderilmesini talep etme gibi haklara sahipsiniz. Bu hakları
                   kullanmak için bize başvurabilirsiniz. İlgili iletişim
-                  bilgileri yukarıda verilmiştir. 
-                  </p>
-                  <h3>8. Kişisel Verilerin Korunması</h3>
-                  <p>
+                  bilgileri yukarıda verilmiştir.
+                </p>
+                <h3>8. Kişisel Verilerin Korunması</h3>
+                <p>
                   Kişisel verilerinizin güvenliği bizim için önemlidir.
                   Verilerinizi yetkisiz erişimlere, kaybolmaya, değiştirilmeye
                   veya ifşaya karşı korumak için gerekli teknik ve
-                  organizasyonel önlemleri almaktayız. </p>
-                  <h3>9. İletişim</h3>
-                  <p> KVKK ile
-                  ilgili herhangi bir sorunuz veya endişeniz varsa, lütfen
-                  İğdeci Aytekin ile iletişime geçmekten çekinmeyin. Size
+                  organizasyonel önlemleri almaktayız.{" "}
+                </p>
+                <h3>9. İletişim</h3>
+                <p>
+                  {" "}
+                  KVKK ile ilgili herhangi bir sorunuz veya endişeniz varsa,
+                  lütfen İğdeci Aytekin ile iletişime geçmekten çekinmeyin. Size
                   yardımcı olmaktan mutluluk duyarız. Bu aydınlatma metni,
                   KVKK`ye uygun olarak düzenlenmiş olup gerektiğinde
                   güncellenebilir. Güncellemeler hakkında sizi
@@ -139,8 +147,10 @@ const ContactPage = () => {
                   aktarılması da dahil olmak üzere yukarıda açıklandığı üzere
                   işlenmesine, konu hakkında tereddüde yer vermeyecek şekilde
                   bilgi sahibi ve aydınlatılmış olarak açık rızam ile onay
-                  veriyorum. <br/><br/>Son güncelleme tarihi: 27.09.2023 İğdeci Aytekin
-                  Hukuk ve Danışmanlık Bürosu
+                  veriyorum. <br />
+                  <br />
+                  Son güncelleme tarihi: 27.09.2023 İğdeci Aytekin Hukuk ve
+                  Danışmanlık Bürosu
                 </p>
               </div>
             </div>
@@ -223,7 +233,7 @@ const ContactPage = () => {
               <div style={{ gridColumn: " span 2" }} required>
                 <label for="">Mesaj</label>
                 <textarea
-                 required
+                  required
                   name="message"
                   rows="4"
                   placeholder="Mesajınızı buraya yazabilirsiniz"
@@ -231,7 +241,10 @@ const ContactPage = () => {
               </div>
               <div className={styles.kvkk}>
                 <input required type="checkbox" />
-                <button className={styles.kvkkButton} onClick={() => togglePopup()}>
+                <button
+                  className={styles.kvkkButton}
+                  onClick={() => togglePopup()}
+                >
                   KVKK Metnini okudum ve onaylıyorum.
                 </button>
               </div>

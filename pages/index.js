@@ -1,6 +1,5 @@
 import styles from "../styles/Home.module.css";
 import Blog from "../components/Blog";
-import Head from "next/head";
 import Layout from "../layout/Layout";
 import Hero from "../components/Hero";
 import Detail from "../components/Detail";
