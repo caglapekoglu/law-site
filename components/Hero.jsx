@@ -14,7 +14,7 @@ const Hero = () => {
     const cards = document.getElementById("cards");
     cards.style.top = "85%";
     setH(() => {
-      return cardRef.current.clientHeight;
+      return cardRef?.current.clientHeight;
     });
   }, []);
   useEffect(() => {

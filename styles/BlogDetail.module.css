@@ -20,6 +20,23 @@
 .blogDetail article {
     padding: 74px 167px;
   }
+  .tags{
+    display: flex;
+    gap: 10px;
+  }
+  .tags span{
+    background-color: #650340;
+    color: #fff;
+    padding: 15px 27px;
+    font-size: 24px;
+    border-radius: 10px;
+    font-weight: 400;
+  }
+  .blogImg{
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+  }
   @media (max-width:1000px) {
     .blogDetail h1 {
         font-size: 24px;
