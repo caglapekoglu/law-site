@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div>
-        <Image src={Logo} />
+        <Image alt="İğdeci Aytekin" src={Logo} />
        <span>
           Your reliable protection in jurisprudence. Our qualification provides
           the opportunity solve the problems of any complexity.

@@ -26,7 +26,7 @@ const Navbar = () => {
         <ul>
           {menuItems.map((item, index) => (
             
-              <Link style={{
+              <Link key={index} style={{
                     fontWeight:
                       router.pathname === item.path ? "700" : "300",
                   }} href={item.path}>
