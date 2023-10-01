@@ -19,10 +19,9 @@ const Hero = () => {
   }, []);
   useEffect(() => {
     function handleResize() {
-      if (h != cardRef.current.clientHeight) {
-        console.log(cardRef.current.clientHeight);
+      if (h != cardRef?.current?.clientHeight|| 0) {
         setH(() => {
-          return cardRef.current.clientHeight;
+          return cardRef?.current?.clientHeight;
         });
       }
     }
