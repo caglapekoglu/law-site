@@ -84,8 +84,13 @@
     width: 90px;
     height: auto;
   }
+  .footer span{
+    font-size: 8px;
+    line-height: 10px;
+  }
 }
 @media (max-width:400px) {
+
   .footer {
     padding: 21px 10px 36px 10px;
     gap: 15px;

@@ -1,10 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import styles from "../styles/Team.module.css";
 import { teams } from "../data/data";
 import Image from "next/image";
 import Link from "next/link";
+
 const Team = () => {
   const [hoveredTeam, setHoveredTeam] = useState(null);
+  const cardsRef = useRef(null);
+
+  const scrollCardsRight = () => {
+    cardsRef.current.scrollLeft += 100; // Kaydırma miktarını ayarlayabilirsiniz
+  };
+
+  const scrollCardsLeft = () => {
+    cardsRef.current.scrollLeft -= 100; // Kaydırma miktarını ayarlayabilirsiniz
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.box}>
@@ -12,12 +23,9 @@ const Team = () => {
       </div>
       <h1>Ekibimiz</h1>
       <p>
-        Deneyimli ekibimiz, hukuki ihtiyaçlarınıza profesyonel çözümler sunmak
-        için burada. Hukukun her alanında branşlaşma esasına göre uzmanlaşmış
-        kadromuz, müvekkillerimize etkili ve güvenilir hukuki rehberlik sağlamak
-        için hazır.
+        Deneyimli ekibimiz, hukuki ihtiyaçlarınıza profesyonel çözümler sunmak için burada. Hukukun her alanında branşlaşma esasına göre uzmanlaşmış kadromuz, müvekkillerimize etkili ve güvenilir hukuki rehberlik sağlamak için hazır.
       </p>
-      <div className={styles.cards}>
+      <div className={styles.cards} ref={cardsRef}>
         {teams.map((item) => (
           <div
             key={item.id}
@@ -40,10 +48,14 @@ const Team = () => {
           </div>
         ))}
       </div>
+     <div className={styles.arrows}>
+     <button onClick={scrollCardsLeft}><ion-icon size="large" name="arrow-back-outline"></ion-icon></button>
+      <button onClick={scrollCardsRight}><ion-icon size="large" name="arrow-forward-outline"></ion-icon></button>
+     </div>
       <Link className={styles.button} href="/ekibimiz">
-          Detaylı Bilgi
-          <ion-icon name="arrow-forward-outline"></ion-icon>
-          </Link>
+        Detaylı Bilgi
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </Link>
     </div>
   );
 };

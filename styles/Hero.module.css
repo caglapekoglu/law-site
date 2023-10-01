@@ -25,6 +25,7 @@
   text-align: center;
   color: #eaeaea;
   padding: 40px 46px;
+  position: relative;
 }
 .cards div h1 {
   color: #fff;

@@ -5,32 +5,24 @@ import Layout from "../../layout/Layout";
 import Image from "next/image";
 import Logo from "../../public/assets/blogLogo.png";
 import Link from "next/link";
+import useBlogs from "../../hooks/useBlogs";
 const BlogPage = () => {
-  const [blogPosts, setBlogPosts] = useState([]);
-  useEffect(() => {
-    fetch("/api/notion")
-      .then((response) => response.json())
-      .then((data) => {
-        if (Array.isArray(data)) {
-          setBlogPosts(data);
-          console.log(data);
-        } else {
-          console.error("Data is not an array:", data);
-        }
-      })
-      .catch((error) => console.error(error));
-  }, []);
+  const blogPosts = useBlogs();
   const [logoSlideIn, setLogoSlideIn] = useState(false);
   useEffect(() => {
-    // Sayfa yüklendiğinde logo'yu kaydır
-    setTimeout(() => {
+    const timeId = setTimeout(() => {
       setLogoSlideIn(true);
-    }, 300); // Örnek olarak 1000 milisaniye (1 saniye) sonra kaydırma işlemi başlayacak
+    }, 300);
+    return () => {
+      clearTimeout(timeId);
+    };
   }, []);
   return (
     <Layout>
       <div className={styles.blog}>
-        <div  className={`${styles.logo} ${logoSlideIn ? styles["slide-in"] : ""}`}>
+        <div
+          className={`${styles.logo} ${logoSlideIn ? styles["slide-in"] : ""}`}
+        >
           <Image alt="İğdeci Aytekin" src={Logo} />
         </div>
         <Image
@@ -57,17 +49,21 @@ const BlogPage = () => {
             {blogPosts.map((post, index) => {
               return (
                 <div key={index}>
-                  <img src={post.properties.images.files[0].file.url} alt="" />
+                  <img
+                    src={post?.properties?.images?.files[0]?.file?.url}
+                    alt=""
+                  />
                   <div>
                     <h3>{post.properties.Title.url}</h3>
                     <p>
-                      {post.properties.Description.rich_text[0].text.content
-                        .length > 200
-                        ? post.properties.Description.rich_text[0].text.content.substring(
+                      {post?.properties?.Description?.rich_text[0]?.text
+                        ?.content?.length > 200
+                        ? post?.properties?.Description?.rich_text[0]?.text?.content?.substring(
                             0,
                             150
                           ) + "..."
-                        : post.properties.Description.rich_text[0].text.content}
+                        : post?.properties?.Description?.rich_text[0]?.text
+                            ?.content}
                     </p>
                     <Link href={`/blog/${index}`}>
                       Detaylı İncele

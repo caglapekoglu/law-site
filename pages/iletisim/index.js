@@ -148,6 +148,22 @@ const ContactPage = () => {
                   işlenmesine, konu hakkında tereddüde yer vermeyecek şekilde
                   bilgi sahibi ve aydınlatılmış olarak açık rızam ile onay
                   veriyorum. <br />
+                </p>
+                <h3 style={{ textAlign: "Center" }}>Açık Rıza ve Onay Metni</h3>
+                <p>
+                  6698 sayılı Kişisel Verilerin Korunması Kanunu çerçevesinde
+                  kişisel/özel nitelikli kişisel verilerimin; fiziksel olarak
+                  ofis adresinde veya web sitesi (www.igdeciaytekin.com)
+                  üzerinden tamamen veya kısmen elde edilmesi, kaydedilmesi,
+                  depolanması, değiştirilmesi, güncellenmesi, sınıflandırılması,
+                  işlendikleri amaç için gerekli olan ya da ilgili kanunda
+                  öngörülen süre kadar muhafaza edilmesi, kanuni nedenlerle veya
+                  yapılan işin niteliği gereği üçüncü kişiler ile paylaşılması,
+                  yurtdışına aktarılması da dahil olmak üzere yukarıda
+                  açıklandığı üzere işlenmesine, konu hakkında tereddüde yer
+                  vermeyecek şekilde bilgi sahibi ve aydınlatılmış olarak açık
+                  rızam ile onay veriyorum.
+                  <br />
                   <br />
                   Son güncelleme tarihi: 27.09.2023 İğdeci Aytekin Hukuk ve
                   Danışmanlık Bürosu

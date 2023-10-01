@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Bg from "../public/assets/header_image.png";
 import Icon1 from "../public/assets/icon1.svg";
@@ -53,7 +53,7 @@ const Hero = () => {
           meselelerin her birinin benzersiz gereksinimlerine odaklanıyor ve
           müvekkil odaklı yaklaşımımızı her zaman önceliğimiz olarak koruyoruz.
         </p>
-        <Link href='/hakkimizda'>
+        <Link href="/hakkimizda">
           Detaylı Bilgi
           <ion-icon name="arrow-forward-outline"></ion-icon>
         </Link>
