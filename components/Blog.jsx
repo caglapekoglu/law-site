@@ -40,7 +40,7 @@ const Blog = () => {
           {blogPosts?.slice(0, 2)?.map((post, index) => {
             return (
               <div key={index}>
-                <img src={post?.properties?.images?.files[0]?.file?.url} alt={post.properties.Title.url} />
+                <img src={post?.properties?.cover?.files[0]?.file?.url} alt={post.properties.Title.url} />
                 <div>
                   <h3>{post.properties.Title.url}</h3>
                   <p>

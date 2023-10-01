@@ -50,7 +50,7 @@ const BlogPage = () => {
               return (
                 <div key={index}>
                   <img
-                    src={post?.properties?.images?.files[0]?.file?.url}
+                    src={post?.properties?.cover?.files[0]?.file?.url}
                     alt=""
                   />
                   <div>

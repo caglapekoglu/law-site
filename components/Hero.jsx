@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Bg from "../public/assets/header_image.png";
 import Icon1 from "../public/assets/icon1.svg";
@@ -6,11 +6,32 @@ import Icon2 from "../public/assets/icon2.svg";
 import Icon3 from "../public/assets/icon3.svg";
 import styles from "../styles/Hero.module.css";
 import Link from "next/link";
+import useCardHeight from "../hooks/useCardHeight";
 const Hero = () => {
+  const cardRef = useRef();
+  const [h, setH] = useState(0);
+  useEffect(() => {
+    const cards = document.getElementById("cards");
+    cards.style.top = "85%";
+    setH(() => {
+      return cardRef.current.clientHeight;
+    });
+  }, []);
+  useEffect(() => {
+    function handleResize() {
+      if (h != cardRef.current.clientHeight) {
+        console.log(cardRef.current.clientHeight);
+        setH(() => {
+          return cardRef.current.clientHeight;
+        });
+      }
+    }
+    window.addEventListener("resize", handleResize);
+  }, []);
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={{marginBottom:h}}>
       <Image alt="İğdeci Aytekin" src={Bg}></Image>
-      <div className={styles.cards}>
+      <div ref={cardRef} id="cards" className={styles.cards}>
         <div>
           <Image src={Icon1}></Image>
           <h1>Sürekli Danışmanlık Hizmetleri</h1>
@@ -36,7 +57,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div className={styles.content}>
+      {/* <div className={styles.content}>
         <div className={styles.box}>
           <div></div>
         </div>
@@ -57,7 +78,7 @@ const Hero = () => {
           Detaylı Bilgi
           <ion-icon name="arrow-forward-outline"></ion-icon>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };

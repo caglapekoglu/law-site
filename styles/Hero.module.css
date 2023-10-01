@@ -1,19 +1,23 @@
 .container {
   position: relative;
+  transition: 0.5s;
+  margin-bottom: 0px;
 }
 
 .container img {
   width: 100vw;
   max-height: 800px;
   height: auto;
-  position: absolute;
+  position: relative;
   object-fit: cover;
 }
 .cards {
-  position: relative;
+  position: absolute;
   display: flex;
   gap: 5px;
-  padding: 450px 107px 0 107px;
+  padding: 0 107px;
+  top: -100%;
+  transition: 0.5s;
 }
 .cards div {
   background-color: #650340;
@@ -97,12 +101,12 @@
 }
 @media (min-width: 1600px) {
   .cards {
-    padding: 520px 50px 0 50px;
+    padding: 0 50px 0 50px;
   }
 }
 @media (max-width: 1370px) {
   .cards {
-    padding: 320px 50px 0 50px;
+    padding: 0 50px 0 50px;
   }
   .cards div h1 {
     font-size: 15px;
@@ -126,7 +130,7 @@
 }
 @media (max-width: 750px) {
   .cards {
-    padding: 150px 50px 0 50px;
+    padding: 0 50px 0 50px;
     flex-direction: column;
   }
   .content h1{

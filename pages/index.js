@@ -7,6 +7,7 @@ import Services from "../components/Services";
 import Team from "../components/Team";
 import Contact from "../components/Contact";
 import { Helmet } from "react-helmet";
+import HeroBottom from "../components/HeroBottom";
 export default function Home() {
   return (
     <Layout>
@@ -16,6 +17,7 @@ export default function Home() {
           <meta name="description" content="Anasayfa descriptions"></meta>
         </Helmet>
         <Hero></Hero>
+        <HeroBottom></HeroBottom>
         <Detail></Detail>
         <Services></Services>
         <Team></Team>

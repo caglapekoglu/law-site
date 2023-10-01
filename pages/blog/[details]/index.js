@@ -29,9 +29,9 @@ function BlogDetail() {
       <img
           className={styles.headerImg}
           width='100'
-          alt={blogPosts[id]?.properties.images.files[0].name}
+          alt={blogPosts[id]?.properties.cover.files[0].name}
           height='100'
-          src={blogPosts[id]?.properties.images.files[0].file.url}
+          src={blogPosts[id]?.properties.cover.files[0].file.url}
         />
         <article>
           <div className={styles.box}>
@@ -39,6 +39,13 @@ function BlogDetail() {
           </div>
           <h1>{blogPosts[id]?.properties.Title.url}</h1>
           <p>{blogPosts[id]?.properties.Description.rich_text[0].plain_text}</p>
+        </article>
+        <article>
+          <div className={styles.tags}>
+            <span>
+              {/* {blogPosts[id]?.properties.tag1.rich_text[0].} */}
+            </span>
+          </div>
         </article>
       </div>
     </Layout>
