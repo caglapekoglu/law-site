@@ -8,27 +8,57 @@ const Team = () => {
   const [hoveredTeam, setHoveredTeam] = useState(null);
   const cardsRef = useRef(null);
 
+  const duration = 200; 
+
   const scrollCardsRight = () => {
-    cardsRef.current.scrollLeft += 100; // Kaydırma miktarını ayarlayabilirsiniz
+    const start = cardsRef.current.scrollLeft;
+    const end = start + 750;
+    const startTime = performance.now();
+
+    function animate(time) {
+      const elapsed = time - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      cardsRef.current.scrollLeft = start + progress * (end - start);
+
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      }
+    }
+
+    requestAnimationFrame(animate);
   };
 
   const scrollCardsLeft = () => {
-    cardsRef.current.scrollLeft -= 100; // Kaydırma miktarını ayarlayabilirsiniz
+    const start = cardsRef.current.scrollLeft;
+    const end = start - 350; // Kaydırma miktarını ayarlayabilirsiniz
+    const startTime = performance.now();
+
+    function animate(time) {
+      const elapsed = time - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      cardsRef.current.scrollLeft = start + progress * (end - start);
+
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      }
+    }
+
+    requestAnimationFrame(animate);
   };
 
   return (
     <div className={styles.container}>
-      <div className={styles.box}>
-        <div></div>
+      {/* ... Diğer içerikler ... */}
+
+      <div className={styles.arrows}>
+        <button onClick={scrollCardsLeft}>
+          <ion-icon size="large" name="arrow-back-outline"></ion-icon>
+        </button>
+        <button onClick={scrollCardsRight}>
+          <ion-icon size="large" name="arrow-forward-outline"></ion-icon>
+        </button>
       </div>
-      <h1>Ekibimiz</h1>
-      <p>
-        Deneyimli ekibimiz, hukuki ihtiyaçlarınıza profesyonel çözümler sunmak için burada. Hukukun her alanında branşlaşma esasına göre uzmanlaşmış kadromuz, müvekkillerimize etkili ve güvenilir hukuki rehberlik sağlamak için hazır.
-      </p>
-        <div className={styles.arrows}>
-     <button onClick={scrollCardsLeft}><ion-icon size="large" name="arrow-back-outline"></ion-icon></button>
-      <button onClick={scrollCardsRight}><ion-icon size="large" name="arrow-forward-outline"></ion-icon></button>
-     </div>
+
       <div className={styles.cards} ref={cardsRef}>
         {teams.map((item) => (
           <div
@@ -52,11 +82,8 @@ const Team = () => {
           </div>
         ))}
       </div>
-   
-      <Link className={styles.button} href="/ekibimiz">
-        Detaylı Bilgi
-        <ion-icon name="arrow-forward-outline"></ion-icon>
-      </Link>
+
+      {/* ... Diğer içerikler ... */}
     </div>
   );
 };
