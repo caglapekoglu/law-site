@@ -11,6 +11,7 @@
 .headerImg {
   width: 100vw;
   height: auto;
+  max-width: 1500px;
 }
 .aboutUs h1 {
   color: #000;
@@ -44,6 +45,7 @@
 .aboutUsImg{
     height:595px;
     width: 100vw;
+    max-width: 1500px;
     position: absolute;
     z-index: 0;
 }

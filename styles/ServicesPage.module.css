@@ -11,6 +11,7 @@
   width: 100vw;
   height: 500px;
   position: absolute;
+  max-width: 1500px;
   align-items: center;
 }
 .logo {
@@ -30,6 +31,7 @@
 }
 .headerImg {
   width: 100vw;
+  max-width: 1500px;
   height: 500px;
   object-fit: cover;
 }

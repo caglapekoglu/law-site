@@ -5,7 +5,8 @@ import Navbar from "../components/Navbar";
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div style={{ display:'flex', justifyContent:'center'}}>
+      <div style={{maxWidth:'1500px',}}>
       <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           
@@ -26,6 +27,7 @@ const Layout = ({ children }) => {
       {children}
       <Footer/>
       <FooterBottom/>
+    </div>
     </div>
   );
 };
