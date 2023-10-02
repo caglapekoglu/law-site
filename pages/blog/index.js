@@ -36,14 +36,7 @@ const BlogPage = () => {
           </div>
           <h1>Blog Yazıları</h1>
           <p>
-            Gayrimenkul hukuku, mülkiyet hakları, tapu işlemleri, kiracı-hak
-            sahibi ilişkileri ve emlak yatırımları gibi konuları kapsayan
-            karmaşık bir hukuk dalıdır. Herkesin bir şekilde gayrimenkule sahip
-            olduğu veya gayrimenkul işlemleriyle ilgilendiği bir noktada bu
-            konular hakkında bilgi sahibi olmak önemlidir. Bu blog yazısında,
-            gayrimenkul hukukunun temel kavramlarına ve mülkiyetinizi ve
-            yatırımlarınızı nasıl koruyabileceğinize dair bazı önemli ipuçlarına
-            odaklanacağız.
+          Hukuki konularda sizleri bilgilendirmek, haklarınızı korumanıza yardımcı olmak amacıyla düzenli olarak güncel blog yazıları sunuyoruz. Hukuk dünyasındaki son gelişmeleri, önemli yargı kararlarını ve hukuki ipuçlarını ele alıyoruz.
           </p>
           <ul>
             {blogPosts.map((post, index) => {
