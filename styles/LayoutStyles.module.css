@@ -1,0 +1,9 @@
+@media (min-width:1500px) {
+    .layoutFrame{
+        display: flex;
+        justify-content: center;
+    }
+    .layout{
+        max-width: 1500px;
+    }
+}

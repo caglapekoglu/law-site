@@ -172,3 +172,13 @@
   width: 24px;
 height: 24px;
 }
+@media (min-width:1500px) {
+  .container{
+    max-width: 1500px;
+    padding: 0 30px;
+  }
+  .arrows{
+    max-width: 1500px;
+    padding: 0 65px 0 15px;
+  }
+}

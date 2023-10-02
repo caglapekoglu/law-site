@@ -2,11 +2,11 @@ import Head from "next/head";
 import Footer from "../components/Footer";
 import FooterBottom from "../components/FooterBottom";
 import Navbar from "../components/Navbar";
-
+import layoutStyles from '../styles/LayoutStyles.module.css'
 const Layout = ({ children }) => {
   return (
-    <div style={{ display:'flex', justifyContent:'center'}}>
-      <div style={{maxWidth:'1500px',}}>
+    <div className={layoutStyles.layoutFrame} >
+      <div className={layoutStyles.layout}>
       <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           
