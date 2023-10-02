@@ -10,8 +10,7 @@ const Footer = () => {
       <div>
         <Image alt="İğdeci Aytekin" src={Logo} />
        <span>
-          Your reliable protection in jurisprudence. Our qualification provides
-          the opportunity solve the problems of any complexity.
+       Bu sitede yer alan içerikler yalnızca bilgilendirme amaçlıdır. Avukatık Kanunu ve Türkiye Barolar Birliği’nin ilgili düzenlemelerine uygun olarak hiçbir şekilde reklam, teklif, hukuki görüş amacı gütmez.
         </span> 
       </div>
       <div>
