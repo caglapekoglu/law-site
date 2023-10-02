@@ -4,11 +4,23 @@ import HeaderImage from "../../public/assets/header_image.png";
 import AboutUsImg from "../../public/assets/aboutus.png";
 import styles from "../../styles/AboutUs.module.css";
 import Layout from "../../layout/Layout";
+import { useSpring, animated } from "react-spring";
 const AboutUs = () => {
+  const fadeIn = useSpring({
+    opacity: 1,
+    from: { opacity: 0 },
+    config: { duration: 2000 }, // Animasyon süresini ayarlayın
+  });
   return (
     <Layout>
       <div className={styles.aboutUs}>
-      <Image alt="İğdeci Aytekin" className={styles.headerImg} src={HeaderImage} />
+      <animated.div style={fadeIn}>
+        <Image
+          alt="İğdeci Aytekin"
+          className={`${styles.headerImg}`} // CSS sınıflarınızı ekleyin
+          src={HeaderImage}
+        />
+      </animated.div>
       <article>
         <div className={styles.box}>
           <div></div>

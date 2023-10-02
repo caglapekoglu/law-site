@@ -32,7 +32,6 @@ const ServicesPages = () => {
           alt="İğdeci Aytekin"
           className={styles.headerImg}
           src={HeaderImage}
-          width={100}
         />
         <article style={{ margin: 0 }}>
           <div className={styles.box}>
