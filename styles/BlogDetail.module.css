@@ -2,6 +2,7 @@
   width: 100vw;
   height: 500px;
   object-fit: cover;
+  max-width: 1500px;
 }
 .blogDetail h1 {
   color: #000;
