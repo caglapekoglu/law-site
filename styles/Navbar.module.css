@@ -71,7 +71,7 @@
   padding: 16px;
   text-align: center;
 }
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
   .insideContainer {
     display: none;
   }
@@ -108,6 +108,11 @@
     line-height: normal;
     padding: 25px 0 57px 57px;
   }
+  .navbar img{
+    width: 200px !important;
+    height: auto;
+    image-rendering: optimizeQuality;
+  }
 }
 @media (max-width: 1370px) {
   .navbar {
@@ -117,7 +122,9 @@
     font-size: 14px;
   }
   .navbar img {
-    width: 150px;
+    width: 300px;
+    height: auto;
+    image-rendering: optimizeQuality;
   }
   .navbar div {
     display: flex;
