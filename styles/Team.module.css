@@ -103,13 +103,15 @@
 .arrows{
   display: flex;
   position: absolute;
-  height: 535px;
-  margin-top: 30px;
+  height:30px;
+  margin-top: 270px;
   justify-content: space-between;
-  z-index: 10;
+
   width: calc(100vw - 70px);
+  cursor: pointer;
 }
 .arrows button{
+  z-index: 100;
   cursor: pointer;
 }
 @media (max-width:1100px) {
@@ -137,8 +139,7 @@
   .arrows{
     display: flex;
     position: absolute;
-    height: 369px;
-    margin-top: 30px;
+    margin-top: 170px;
     justify-content: space-between;
     z-index: 10;
     width: calc(100vw - 70px);
@@ -166,7 +167,6 @@
   gap: 10px;
   height:24px;
   position: relative !important;
-  z-index: 1; 
   color: white;
 }
 .socialMedia ion-icon{
