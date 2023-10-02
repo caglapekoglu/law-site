@@ -71,7 +71,11 @@
   padding: 16px;
   text-align: center;
 }
-@media (max-width: 1050px) {
+.navbar img{
+  width: 300px;
+  height: auto;
+}
+@media (max-width: 1070px) {
   .insideContainer {
     display: none;
   }
@@ -98,7 +102,7 @@
     border-color: white;
     position: absolute;
     z-index: 10;
-    top: 90px;
+    top: 80px;
     background-color: #650340;
     color: #f6f7fc;
     font-family: Sora;
@@ -113,8 +117,6 @@
     height: auto;
     image-rendering: optimizeQuality;
   }
-}
-@media (max-width: 1370px) {
   .navbar {
     padding: 11px 30px;
   }
@@ -141,3 +143,4 @@
     width: 20px;
   }
 }
+

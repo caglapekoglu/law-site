@@ -1,8 +1,7 @@
 import { useState } from "react";
 import styles from "../styles/Navbar.module.css";
 import Image from "next/image";
-import Logo from "../public/assets/logo.svg";
-import Search from "../public/assets/search.svg";
+import Logo from "../public/assets/logo.png";
 import Link from "next/link";
 import { menuItems } from "../data/data";
 import { useRouter } from "next/router";
@@ -37,10 +36,6 @@ const Navbar = () => {
    
           ))}
         </ul>
-        <div>
-          <Image src={Search} />
-          <input type="text" placeholder="Hukuk" />
-        </div>
       </article>
 
       <article className={styles.mobileContainer}>

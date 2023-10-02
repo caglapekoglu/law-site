@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/Footer.module.css";
 import Image from "next/image";
-import Logo from "../public/assets/logo.svg";
+import Logo from "../public/assets/logo.png";
 import Link from "next/link";
 import { menuItems } from "../data/data";
 const Footer = () => {

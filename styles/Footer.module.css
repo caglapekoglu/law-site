@@ -39,6 +39,10 @@
     line-height: 37.8px; /* 189% */
     letter-spacing: 0.3px;
 }
+.footer div img{
+  width: 300px;
+  height: auto;
+}
 @media (max-width:1160px) {
   .footer {
     padding: 53px 62px 36px 62px;

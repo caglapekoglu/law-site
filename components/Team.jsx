@@ -69,14 +69,6 @@ const Team = () => {
             <Image
               src={hoveredTeam === item ? item.hoveredImage : item.image}
             ></Image>
-            <div className={styles.socialMedia}>
-              <Link target="_blank" href={item.linkedin}>
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </Link>
-              <Link target="_blank" href={item.mail}>
-                <ion-icon name="mail-outline"></ion-icon>
-              </Link>
-            </div>
             <h1>{item.name}</h1>
             <span>{item.role}</span>
           </div>
