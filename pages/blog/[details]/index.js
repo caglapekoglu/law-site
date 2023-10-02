@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Layout from "../../../layout/Layout";
 import styles from "../../../styles/BlogDetail.module.css";
 import WP from "../../../public/assets/WpIcon.svg"
-import Insta from "../../../public/assets/InstaIcon.svg"
+import Insta from "../../../public/assets/instaIcon.svg"
 import Linkedin from "../../../public/assets/LinkedinIcon.svg"
 import X from "../../../public/assets/XIcon.svg"
 import { useRouter } from "next/router"; // Import the useRouter hook
