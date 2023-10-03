@@ -206,6 +206,12 @@
   line-height: 15px; /* 110% */
   text-decoration-line: none;
 }
+.whatsappWeb{
+  display: inline;
+}
+.whatsappmobil{
+  display: none;
+}
 @media (max-width: 1035px) {
   .contact {
     padding: 55px 34px;
@@ -236,6 +242,12 @@
   }
 }
 @media (max-width: 750px) {
+  .whatsappWeb{
+    display: none;
+  }
+  .whatsappmobil{
+    display: inline;
+  }
   .contact article h2 {
     color: #650340;
     font-size: 20px;

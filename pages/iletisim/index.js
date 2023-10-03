@@ -188,6 +188,15 @@ const ContactPage = () => {
               <p>
                 <ion-icon name="logo-whatsapp"></ion-icon>
                 <Link
+                className={styles.whatsappmobil}
+                  href="https://whatsapp.com/send?phone=902166514252"
+                  target="_blank"
+                >
+                  +90 216 651 4252
+                </Link>
+                <Link
+                className={styles.whatsappWeb}
+        
                   href="https://web.whatsapp.com/send?phone=902166514252"
                   target="_blank"
                 >
