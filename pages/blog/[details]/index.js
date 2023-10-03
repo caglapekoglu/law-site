@@ -28,7 +28,7 @@ function BlogDetail() {
   }, []);
   const text = blogPosts[id]?.properties?.Description?.rich_text[0]?.plain_text; // Metni alın
   const paragraphs = text?.split("<br>");
-  const pageUrl = encodeURIComponent(router.asPath);
+  const pageUrl = window.location.href;
   const textTitle = blogPosts[id]?.properties?.Title?.url;
   const shareOnWhatsApp = () => {
     const whatsappUrl = `https://api.whatsapp.com/send?text=${textTitle}%20${pageUrl}`;
