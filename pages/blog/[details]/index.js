@@ -28,10 +28,10 @@ function BlogDetail() {
   }, []);
   const text = blogPosts[id]?.properties?.Description?.rich_text[0]?.plain_text; // Metni alın
   const paragraphs = text?.split("<br>");
-  const pageUrl = `${window.location.protocol}//${window.location.host}${router.asPath}`;
+  const pageUrl = encodeURIComponent(router.asPath);
   const textTitle = blogPosts[id]?.properties?.Title?.url;
   const shareOnWhatsApp = () => {
-    const whatsappUrl = `https://api.whatsapp.com/send?text=${textTitle}%20${pageUrl}`;
+    const whatsappUrl = `https://api.whatsapp.com/send?text=${textTitle}%20${window !== 'undefined'?`${window.location.protocol}//${window.location.host}${router.asPath}`:pageUrl}`;
     window.open(whatsappUrl, "_blank");
   };
   const shareOnLinkedIn = () => {
