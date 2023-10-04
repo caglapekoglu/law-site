@@ -17,10 +17,10 @@ const ContactPage = () => {
 
     if (/android/i.test(userAgent)) {
       // Android için bağlantıyı ayarla
-      whatsappHref = "https://whatsapp.com/send?phone=902166514252";
+      whatsappHref = "https://api.whatsapp.com/send?phone=902166514252";
     } else if (/iphone|ipad|ipod/i.test(userAgent)) {
       // iOS için bağlantıyı ayarla
-      whatsappHref = "https://whatsapp.com/send?phone=902166514252";
+      whatsappHref = "https://api.whatsapp.com/send?phone=902166514252";
     } else {
       // Diğer cihazlar için varsayılan bağlantıyı ayarla
       whatsappHref = "https://web.whatsapp.com/send?phone=902166514252";
