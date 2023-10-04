@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "../../layout/Layout";
 import styles from "../../styles/ContactPage.module.css";
 import Link from "next/link";
@@ -10,6 +10,29 @@ const ContactPage = () => {
   const togglePopup = () => {
     setIsPopupOpen(!isPopupOpen);
   };
+  useEffect(() => {
+    const userAgent = window.navigator.userAgent;
+
+    let whatsappHref = "";
+
+    if (/android/i.test(userAgent)) {
+      // Android için bağlantıyı ayarla
+      whatsappHref = "https://whatsapp.com/send?phone=902166514252";
+    } else if (/iphone|ipad|ipod/i.test(userAgent)) {
+      // iOS için bağlantıyı ayarla
+      whatsappHref = "https://wa.me/902166514252";
+    } else {
+      // Diğer cihazlar için varsayılan bağlantıyı ayarla
+      whatsappHref = "https://web.whatsapp.com/send?phone=902166514252";
+    }
+
+    // WhatsApp bağlantısının href özelliğine atama yapma
+    const whatsappLink = document.getElementById("whatsappLink");
+    if (whatsappLink) {
+      whatsappLink.href = whatsappHref;
+    }
+  }, []);
+
   return (
     <Layout>
       <Helmet>
@@ -188,16 +211,8 @@ const ContactPage = () => {
               <p>
                 <ion-icon name="logo-whatsapp"></ion-icon>
                 <Link
-                className={styles.whatsappmobil}
-                  href="https://whatsapp.com/send?phone=902166514252"
-                  target="_blank"
-                >
-                  +90 216 651 4252
-                </Link>
-                <Link
-                className={styles.whatsappWeb}
-        
-                  href="https://web.whatsapp.com/send?phone=902166514252"
+                id="whatsappLink"
+                href="#"
                   target="_blank"
                 >
                   +90 216 651 4252
