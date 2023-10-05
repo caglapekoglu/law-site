@@ -6,22 +6,33 @@ import Image from "next/image";
 import Logo from "../../public/assets/blogLogo.png";
 import Link from "next/link";
 import useBlogs from "../../hooks/useBlogs";
+
+// Fonksiyon, metindeki <br> etiketlerini kaldırır ve metni döndürür
+function removeBrTags(text) {
+  return text.replace(/<br\s*\/?>/gi, " ");
+}
+
 const BlogPage = () => {
   const blogPosts = useBlogs();
   const [logoSlideIn, setLogoSlideIn] = useState(false);
+
   useEffect(() => {
     const timeId = setTimeout(() => {
       setLogoSlideIn(true);
     }, 300);
+
     return () => {
       clearTimeout(timeId);
     };
   }, []);
+
   return (
     <Layout>
       <div className={styles.blog}>
         <div
-          className={`${styles.logo} ${logoSlideIn ? styles["slide-in"] : ""}`}
+          className={`${styles.logo} ${
+            logoSlideIn ? styles["slide-in"] : ""
+          }`}
         >
           <Image alt="İğdeci Aytekin" src={Logo} />
         </div>
@@ -36,10 +47,22 @@ const BlogPage = () => {
           </div>
           <h1>Blog Yazıları</h1>
           <p>
-          Hukuki konularda sizleri bilgilendirmek, haklarınızı korumanıza yardımcı olmak amacıyla düzenli olarak güncel blog yazıları sunuyoruz. Hukuk dünyasındaki son gelişmeleri, önemli yargı kararlarını ve hukuki ipuçlarını ele alıyoruz.
+            Hukuki konularda sizleri bilgilendirmek, haklarınızı korumanıza
+            yardımcı olmak amacıyla düzenli olarak güncel blog yazıları
+            sunuyoruz. Hukuk dünyasındaki son gelişmeleri, önemli yargı
+            kararlarını ve hukuki ipuçlarını ele alıyoruz.
           </p>
           <ul>
             {blogPosts.map((post, index) => {
+              const descriptionText = removeBrTags(
+                post?.properties?.Description?.rich_text[0]?.text?.content || ""
+              );
+
+              const truncatedDescription =
+                descriptionText.length > 200
+                  ? descriptionText.substring(0, 150) + "..."
+                  : descriptionText;
+
               return (
                 <div key={index}>
                   <img
@@ -48,16 +71,7 @@ const BlogPage = () => {
                   />
                   <div>
                     <h3>{post.properties.Title.url}</h3>
-                    <p>
-                      {post?.properties?.Description?.rich_text[0]?.text
-                        ?.content?.length > 200
-                        ? post?.properties?.Description?.rich_text[0]?.text?.content?.substring(
-                            0,
-                            150
-                          ) + "..."
-                        : post?.properties?.Description?.rich_text[0]?.text
-                            ?.content}
-                    </p>
+                    <p>{truncatedDescription}</p>
                     <Link href={`/blog/${index}`}>
                       Detaylı İncele
                       <ion-icon name="arrow-forward-outline"></ion-icon>
