@@ -48,9 +48,8 @@ function BlogDetail() {
       <div className={styles.blogDetail}>
         <img
           className={styles.headerImg}
-          width="100"
+          loading="lazy"
           alt={blogPosts[id]?.properties?.cover?.files[0]?.name}
-          height="100"
           src={blogPosts[id]?.properties?.cover?.files[0]?.file?.url}
         />
         <article>
@@ -72,6 +71,7 @@ function BlogDetail() {
             className={styles.blogImg}
             src={blogPosts[id]?.properties?.image?.files[0]?.file?.url}
             alt="Blog Resmi"
+            loading="lazy"
           />
           <div className={styles.textContainer}>
             {paragraphs

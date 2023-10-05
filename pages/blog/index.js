@@ -66,8 +66,9 @@ const BlogPage = () => {
               return (
                 <div key={index}>
                   <img
+                    loading="lazy"
                     src={post?.properties?.cover?.files[0]?.file?.url}
-                    alt=""
+                    alt={post?.properties?.Title}
                   />
                   <div>
                     <h3>{post.properties.Title.url}</h3>
