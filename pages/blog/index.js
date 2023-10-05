@@ -40,6 +40,7 @@ const BlogPage = () => {
           alt="İğdeci Aytekin"
           className={styles.headerImg}
           src={HeaderImage}
+          loading="lazy"
         />
         <article>
           <div className={styles.box}>
