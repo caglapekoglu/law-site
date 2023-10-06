@@ -15,7 +15,6 @@ function removeBrTags(text) {
 const BlogPage = () => {
   const blogPosts = useBlogs();
   const [logoSlideIn, setLogoSlideIn] = useState(false);
-
   useEffect(() => {
     const timeId = setTimeout(() => {
       setLogoSlideIn(true);
@@ -69,10 +68,10 @@ const BlogPage = () => {
                   <img
                     loading="lazy"
                     src={post?.properties?.cover?.files[0]?.file?.url}
-                    alt={post?.properties?.Title}
+                    alt={post.properties?.Title?.rich_text[0]?.plain_text}
                   />
                   <div>
-                    <h3>{post.properties.Title.url}</h3>
+                    <h3>{post.properties?.Title?.rich_text[0]?.plain_text}</h3>
                     <p>{truncatedDescription}</p>
                     <Link href={`/blog/${index}`}>
                       Detaylı İncele
