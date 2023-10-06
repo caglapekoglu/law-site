@@ -49,7 +49,7 @@ function BlogDetail() {
     <Layout>
       <div className={styles.blogDetail}>
          <Helmet>
-          <title>{blogPosts[id]?.properties?.Title?.url}</title>
+          <title>{blogPosts[id]?.properties?.Title?.rich_text[0]?.plain_text}</title>
           <meta
             name="description"
             content={
@@ -68,7 +68,7 @@ function BlogDetail() {
           <div className={styles.box}>
             <div></div>
           </div>
-          <h1>{blogPosts[id]?.properties?.Title?.url}</h1>
+          <h1>{blogPosts[id]?.properties?.Title?.rich_text[0]?.plain_text}</h1>
           <div className={styles.textContainer}>
             {paragraphs
               ?.slice(0, paragraphs.length / 2)
