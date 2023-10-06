@@ -56,10 +56,7 @@ function BlogDetail() {
               blogPosts[id]?.properties?.meta?.rich_text[0]?.plain_text
             }
           />
-          <link
-            rel="canonical"
-            href={window.location.href}
-          />
+         
         </Helmet>
         <img
           className={styles.headerImg}

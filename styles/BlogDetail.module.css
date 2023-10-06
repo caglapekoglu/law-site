@@ -95,7 +95,7 @@ cursor: pointer;
     font-size: 12px !important;
   }
 }
-@media (max-width: 620px) {
+@media (max-width: 750px) {
   .tagsandsm{
     display: flex;
     flex-direction: column;
