@@ -6,6 +6,8 @@ import Linkedin from "../../../public/assets/LinkedinIcon.svg";
 import X from "../../../public/assets/XIcon.svg";
 import { useRouter } from "next/router"; // Import the useRouter hook
 import Image from "next/image";
+import { Helmet } from "react-helmet";
+
 function BlogDetail() {
   const router = useRouter(); // Initialize the router
   const id = Number(router.query.details); // Use the router to get the query parameter
@@ -46,6 +48,19 @@ function BlogDetail() {
   return (
     <Layout>
       <div className={styles.blogDetail}>
+         <Helmet>
+          <title>{blogPosts[id]?.properties?.Title?.url}</title>
+          <meta
+            name="description"
+            content={
+              blogPosts[id]?.properties?.meta?.rich_text[0]?.plain_text
+            }
+          />
+          <link
+            rel="canonical"
+            href={window.location.href}
+          />
+        </Helmet>
         <img
           className={styles.headerImg}
           loading="lazy"
