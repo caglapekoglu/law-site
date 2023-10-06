@@ -236,7 +236,7 @@ const ContactPage = () => {
                 <div className={styles.ellipse2}></div>
               </div>
             </div>
-            <form action="https://formspree.io/f/xzbyjnnk" method="POST">
+            <form action="https://formspree.io/f/xgejpqka" method="POST">
               <div>
                 <label for="">Ad</label>
                 <input
