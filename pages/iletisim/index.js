@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Layout from "../../layout/Layout";
 import styles from "../../styles/ContactPage.module.css";
 import Link from "next/link";
-import { Helmet } from "react-helmet";
+import Head from "next/head";
 
 const ContactPage = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
