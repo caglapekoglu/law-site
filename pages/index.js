@@ -8,12 +8,13 @@ import Team from "../components/Team";
 import Contact from "../components/Contact";
 import { Helmet } from "react-helmet";
 import HeroBottom from "../components/HeroBottom";
+import Head from "next/head";
 export default function Home() {
   return (
     <Layout>
       <div className={styles.container}>
+        <Head><title>İğdeci Aytekin</title></Head>
         <Helmet>
-          <title>Anasayfa</title>
           <meta name="description" content="Anasayfa descriptions"></meta>
         </Helmet>
         <Hero></Hero>

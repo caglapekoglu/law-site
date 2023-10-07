@@ -4,11 +4,12 @@ import Layout from "../../layout/Layout";
 import { teams } from "../../data/data";
 import Image from "next/image";
 import Link from "next/link";
-
+import Head from "next/head";
 const TeamPages = () => {
   const [hoveredTeam, setHoveredTeam] = useState(null);
   return (
     <Layout>
+      <Head><title>Ekibimiz</title></Head>
       <div className={styles.team}>
         <div className={styles.box}>
           <div></div>

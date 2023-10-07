@@ -5,6 +5,7 @@ import AboutUsImg from "../../public/assets/aboutus.png";
 import styles from "../../styles/AboutUs.module.css";
 import Layout from "../../layout/Layout";
 import { useSpring, animated } from "react-spring";
+import Head from "next/head";
 const AboutUs = () => {
   const fadeIn = useSpring({
     opacity: 1,
@@ -13,6 +14,7 @@ const AboutUs = () => {
   });
   return (
     <Layout>
+      <Head><title>Hakkımızda</title></Head>
       <div className={styles.aboutUs}>
       <animated.div style={fadeIn}>
         <Image

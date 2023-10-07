@@ -6,7 +6,7 @@ import Image from "next/image";
 import Logo from "../../public/assets/blogLogo.png";
 import Link from "next/link";
 import useBlogs from "../../hooks/useBlogs";
-
+import Head from "next/head";
 // Fonksiyon, metindeki <br> etiketlerini kaldırır ve metni döndürür
 function removeBrTags(text) {
   return text.replace(/<br\s*\/?>/gi, " ");
@@ -27,6 +27,7 @@ const BlogPage = () => {
 
   return (
     <Layout>
+      <Head><title>Blog</title></Head>
       <div className={styles.blog}>
         <div
           className={`${styles.logo} ${

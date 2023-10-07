@@ -6,8 +6,7 @@ import styles from "../../styles/ServicesPage.module.css";
 import ServiceCard from "../../components/ServiceCard";
 import { ServicePageItems } from "../../data/data";
 import Logo from "../../public/assets/blogLogo.png";
-import { Helmet } from "react-helmet";
-
+import Head from "next/head";
 const ServicesPages = () => {
   const [logoSlideIn, setLogoSlideIn] = useState(false);
   useEffect(() => {
@@ -18,10 +17,8 @@ const ServicesPages = () => {
   }, []);
   return (
     <Layout>
-      <Helmet>
-        <title>Hizmetlerimiz</title>
-        <meta name="description" content="Hizmetlerimiz"></meta>
-      </Helmet>
+      <Head><title>Hizmetlerimiz</title></Head>
+    
       <div className={styles.services}>
         <div
           className={`${styles.logo} ${logoSlideIn ? styles["slide-in"] : ""}`}

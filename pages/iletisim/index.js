@@ -35,10 +35,7 @@ const ContactPage = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>İletişim</title>
-        <meta name="description" content="İletişim Bilgileri"></meta>
-      </Helmet>
+      <Head><title>İletişim</title></Head>
       <div className={styles.contact}>
         <div className={styles.box}>
           <div></div>
