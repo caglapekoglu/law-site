@@ -103,6 +103,9 @@ cursor: pointer;
     align-items: center;
     gap: 20px;
   }
+  .tags{
+    flex-direction: column;
+  }
   .socialmedia{
     flex-direction: column;
   }
