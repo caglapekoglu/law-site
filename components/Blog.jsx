@@ -42,7 +42,7 @@ const Blog = () => {
               <div key={index}>
                 <img src={post?.properties?.cover?.files[0]?.file?.url} alt={post.properties.Title.url} />
                 <div>
-                  <h3>{post.properties.Title.url}</h3>
+                  <h3>{post.properties?.Title?.rich_text[0]?.plain_text}</h3>
                   <p>
                   {post?.properties?.Description?.rich_text[0]?.text?.content?.length > 200
                   ? post?.properties?.Description?.rich_text[0]?.text?.content?.substring(0, 150) + "..."
