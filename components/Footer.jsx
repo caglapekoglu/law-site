@@ -15,8 +15,8 @@ const Footer = () => {
       </div>
       <div>
         <h1>İletişim Bilgileri</h1>
-        <p style={{fontSize: '16px', fontWeight: 'normal'}}>
-          Yasa Kule Esentepe Mahallesi, <br/> Anadolu Caddesi, <br/>No: 14/7 <br/>
+        <p>
+          Yasa Kule <br/> Esentepe Mahallesi, <br/> Anadolu Caddesi, <br/>No: 14/7 <br/>
               Kartal/İstanbul
         </p>
        <p style={{marginTop: '10px'}}>

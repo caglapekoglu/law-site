@@ -44,7 +44,7 @@ const ContactPage = () => {
         <iframe
           width={"100%"}
           height="540"
-          src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Bostanc%C4%B1%20Mahallesi%2CEmin%20Ali%20Pa%C5%9Fa%20Caddesi%2C%20No%20%3A102%2F8%20%20Kad%C4%B1k%C3%B6y%2F%C4%B0stanbul+(Title)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed"
+  src="https://maps.google.com/maps?width=700&height=440&hl=en&q=Yasa%20Kule%20Esentepe%20Mahallesi%20Anadolu%20Caddesi%20No%3A14%2F7%20Kartal%2Fİstanbul&ie=UTF8&t=&z=15&iwloc=B&output=embed"
         ></iframe>
         <article>
           {isPopupOpen && (
@@ -81,7 +81,7 @@ const ContactPage = () => {
                   Veri sorumlusu olarak, İğdeci Aytekin, Türkiye`de faaliyet
                   göstermektedir ve kişisel verilerin işlenmesi süreçlerinin
                   sorumlusudur. İletişim bilgilerimiz aşağıdaki gibidir: Adres:
-                  Yasa Kule Esentepe Mahallesi Anadolu Caddesi No:14 D:7 Kartal/İstanbul 
+                  Yasa Kule, Esentepe Mahallesi Anadolu Caddesi No:14 D:7 Kartal/İstanbul 
                   Telefon: 02126514252 E Posta:
                   info@igdeciaytekin.com
                 </p>
@@ -223,10 +223,8 @@ const ContactPage = () => {
               </p>
               <p>
                 <ion-icon name="location-sharp"></ion-icon>
-                Bostancı Mahallesi, <br />
-                Emin Ali Paşa Caddesi, <br />
-                No :102/8 <br />
-                Kadıköy/İstanbul
+                Yasa Kule <br/> Esentepe Mahallesi, <br/> Anadolu Caddesi, <br/>No: 14/7 <br/>
+              Kartal/İstanbul
               </p>
               <div className={styles.ellipses}>
                 <div className={styles.ellipse1}></div>

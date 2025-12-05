@@ -27,7 +27,7 @@ const Contact = () => {
           <p>
             <ion-icon name="location-outline"></ion-icon>
             <span>
-              Yasa Kule Esentepe Mahallesi, <br/> Anadolu Caddesi, <br/>No: 14/7 <br/>
+              Yasa Kule <br/> Esentepe Mahallesi, <br/> Anadolu Caddesi, <br/>No: 14/7 <br/>
               Kartal/İstanbul
             </span>
           </p>
