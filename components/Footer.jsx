@@ -15,10 +15,15 @@ const Footer = () => {
       </div>
       <div>
         <h1>İletişim Bilgileri</h1>
-        <p>
-          Bostancı Mahallesi, <br/> Emin Ali Paşa Caddesi, <br/> No :102/8<br/> Kadıköy/İstanbul
+        <p style={{fontSize: '16px', fontWeight: 'normal'}}>
+          Yasa Kule Esentepe Mahallesi, <br/> Anadolu Caddesi, <br/>No: 14/7 <br/>
+              Kartal/İstanbul
         </p>
-        <p style={{marginTop:'10px'}}>info@igdeciaytekin.com <br />+90 216 651 4252</p>
+       <p style={{marginTop: '10px'}}>
+        <a href="mailto:info@igdeciaytekin.com">info@igdeciaytekin.com</a><br />
+        <a href="tel:+902166514252">+90 216 651 4252</a>
+        </p>
+
       </div>
       <div>
         <h1>Linkler</h1>

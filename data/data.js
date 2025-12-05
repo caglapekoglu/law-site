@@ -227,12 +227,4 @@ export const teams = [
     linkedin: "http://www.linkedin.com/in/gayenur-karatass",
     mail: "mailto:info@igdeciaytekin.com",
   },
-  {
-    name: "Yusuf İkbal ÇELİK",
-    role: "Operasyon Uzmanı",
-    image: person5,
-    hoveredImage: person5Color,
-    linkedin: "http://www.linkedin.com/in/yusuf-ikbal-celik",
-    mail: "mailto:yusufikbalcelik@igdeciaytekin.com",
-  },
 ];

@@ -81,8 +81,8 @@ const ContactPage = () => {
                   Veri sorumlusu olarak, İğdeci Aytekin, Türkiye`de faaliyet
                   göstermektedir ve kişisel verilerin işlenmesi süreçlerinin
                   sorumlusudur. İletişim bilgilerimiz aşağıdaki gibidir: Adres:
-                  Bostancı Mahallesi, Emin Ali Paşa Caddesi, No:102 İç Kapı No:8
-                  Kadıköy/İSTANBUL Telefon: 02126514252 E Posta:
+                  Yasa Kule Esentepe Mahallesi Anadolu Caddesi No:14 D:7 Kartal/İstanbul 
+                  Telefon: 02126514252 E Posta:
                   info@igdeciaytekin.com
                 </p>
                 <h3>3. İşlenen Kişisel Verileriniz</h3>

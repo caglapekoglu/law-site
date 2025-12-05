@@ -27,8 +27,8 @@ const Contact = () => {
           <p>
             <ion-icon name="location-outline"></ion-icon>
             <span>
-              Bostancı Mahallesi, <br/> Emin Ali Paşa Caddesi, <br/>No :102/8 <br/>
-              Kadıköy/İstanbul
+              Yasa Kule Esentepe Mahallesi, <br/> Anadolu Caddesi, <br/>No: 14/7 <br/>
+              Kartal/İstanbul
             </span>
           </p>
         </div>
