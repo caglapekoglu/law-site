@@ -223,8 +223,13 @@ const ContactPage = () => {
               </p>
               <p>
                 <ion-icon name="location-sharp"></ion-icon>
-                Yasa Kule <br/> Esentepe Mahallesi, <br/> Anadolu Caddesi, <br/>No: 14/7 <br/>
-              Kartal/İstanbul
+                <span className={styles.column}>
+                  <span>Yasa Kule</span>
+                  <span>Esentepe Mahallesi, </span>
+                  <span>Anadolu Caddesi, </span>
+                  <span>No: 14/7</span>
+                  <span>Kartal/İstanbul</span>
+                </span>
               </p>
               <div className={styles.ellipses}>
                 <div className={styles.ellipse1}></div>

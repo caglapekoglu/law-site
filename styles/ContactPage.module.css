@@ -207,6 +207,12 @@
   text-decoration-line: none;
 }
 
+
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 1035px) {
   .contact {
     padding: 55px 34px;

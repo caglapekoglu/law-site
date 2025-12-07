@@ -47,7 +47,14 @@
 .contact div p{
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
+
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 1200px) {
   .contact img{
     width: 300px;

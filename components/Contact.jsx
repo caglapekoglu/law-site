@@ -26,9 +26,12 @@ const Contact = () => {
           </p>
           <p>
             <ion-icon name="location-outline"></ion-icon>
-            <span>
-              Yasa Kule <br/> Esentepe Mahallesi, <br/> Anadolu Caddesi, <br/>No: 14/7
-              Kartal/İstanbul
+            <span className={styles.column}>
+              <span>Yasa Kule</span>
+              <span>Esentepe Mahallesi, </span>
+              <span>Anadolu Caddesi, </span>
+              <span>No: 14/7</span>
+              <span>Kartal/İstanbul</span>
             </span>
           </p>
         </div>
